@@ -1,0 +1,37 @@
+html {
+    font-size: 100%;
+    box-sizing:border-box;
+}
+*, ::before,::after {
+    box-sizing:inherit;
+}
+*, body {
+    font-family: 'Public Sans', sans-serif;
+    margin:0;
+    padding:0;
+}
+.navigation_bar {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.navigation_bar li {
+    width: 100px;
+    display:inline;
+    text-align: center;
+    border:1px solid black;
+}
+.navigation_bar li a {
+    display: block;
+    color: black;
+    padding:10px 10px;
+    text-decoration: none;
+}
+.navigation_bar li a:hover {
+    color:whitesmoke;
+    background-color: blueviolet;
+}
+.navigation_bar li a.active:not(:hover) {
+    color: white;
+    background-color: lightslategrey;
+}

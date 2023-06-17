@@ -1,0 +1,26 @@
+header--------------------------------------------------------------------------
+
+   <header>
+        <nav>
+            <a href="#">Music Melody</a>
+            <ul class="navigation_bar">
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Favourites</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">PlayGame</a></li>
+                <li><a href="#">Comment</a></li>
+                <li><a href="#">Newsletter</a></li>
+            </ul>
+            <a href="#">Sign-in</a>
+        </nav>
+    </header>
+
+footer--------------------------------------------------------------------------
+
+    <footer>
+        <p>Copyright by Group 3<br>All rights reserved<br>2023</p>
+        <a href="#">Link to page editor</a>
+        <div class="gototop"><a href="#">&#8679;</a></div>
+    </footer>

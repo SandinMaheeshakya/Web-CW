@@ -5,7 +5,7 @@
 .hero{
     height: 90vh; /*85*/
     color: whitesmoke;
-    background-image: url("/Web-CW/img/OIP2.jpg");
+    background-image: url("img/OIP2.jpg");
     background-size:cover;
     justify-content: center;
 }

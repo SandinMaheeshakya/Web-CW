@@ -1,108 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Main page</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style_s2.css">
-    <link rel ="icon" type = "image/png" href ="simfy2.png">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/main_s2.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <nav class="navigation_bar">
-            <a href="main_s2.html"><img src="Simfy1.png" alt="logo" class="logo" height="30px"></a>
-            <ul>
+        <nav>
+            <a href="#">Music Melody</a>
+            <ul class="navigation_bar">
                 <li><a class="active" href="#">Home</a></li>
                 <li><a href="#">About Us</a></li>
-                <li><a href="#">Shop</a></li>
                 <li><a href="#">Gallery</a></li>
-                <li><a href="#">Favourite</a></li>
+                <li><a href="#">Favourites</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">PlayGame</a></li>
+                <li><a href="#">Comment</a></li>
+                <li><a href="#">Newsletter</a></li>
             </ul>
-            <button type="button"  onclick="myFunction()">Sign In</button>
+            <a href="#">Sign-in</a>
         </nav>
     </header>
-    <section class="main_section">
-        <div>
-            <video class="main-video" width="480" height="270" controls>
-                <source src="scene2.mp4" type="video/mp4">
-                Video Not Available
-            </video>
-            <h1>Main heading</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius neque fugiat deserunt vero distinctio libero, provident aliquam hic sed reprehenderit sequi? Autem voluptates accusamus commodi, repellendus officiis veritatis laboriosam quibusdam consequatur. Nisi repellat sint, atque nihil quia aperiam provident, quo dolor officiis ducimus amet perspiciatis neque, minima eum quam esse!</p>
-            <button type="button">Sign in</button>
-        </div>
+    <section class="hero">
+        <h1>Main heading</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit mollitia iusto corrupti animi. Velit distinctio illum excepturi saepe incidunt impedit libero porro ex nesciunt eius a, sed vero! Neque, voluptates, non itaque omnis odio dolore eum inventore, amet cum quasi eligendi earum error alias adipisci sint ipsam animi repellendus libero.</p>
     </section>
-    <section class="section_divs">
+    <section class="section_two">
+        <h1>New Release</h1>
         <div class="div_container">
-            <div>
-                <h2>Learn more</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque sapiente delectus atque ipsa tenetur ad vero minus obcaecati dolor velit!</p>
-                <button type="button">About us</button>
+            <div class="item item1">
+                <img src="img/OIP2.jpg" width="80%" height="auto">
+                <h2>Music Name</h2>
+                <p>praesentium atque fugit rem perferendis necessitatibus eos!</p>
+                <span><a>Play Music</a></span>
             </div>
-            <div>
-                <h2>Shop</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque sapiente delectus atque ipsa tenetur ad vero minus obcaecati dolor velit!</p>
-                <button type="button">Shop</button></div>
-            <div>
-                <h2>Gallery</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque sapiente delectus atque ipsa tenetur ad vero minus obcaecati dolor velit!</p>
-                <button type="button">Gallery</button>
+            <div class="item item1">
+                <img src="img/OIP2.JPG" width="80%" height="auto">
+                <h2>Music Name</h2>
+                <p>praesentium atque fugit rem perferendis necessitatibus eos!</p>
+                <span><a>Play Music</a></span>
             </div>
-            <div>
-                <h2>Favourite</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque sapiente delectus atque ipsa tenetur ad vero minus obcaecati dolor velit!</p>
-                <button type="button">Favourite</button>
+            <div class="item item1">
+                <img src="img/OIP2.JPG" width="80%" height="auto">
+                <h2>Music Name</h2>
+                <p>praesentium atque fugit rem perferendis necessitatibus eos!</p>
+                <span><a>Play Music</a></span>
             </div>
+            <div class="item item1">
+                <img src="img/OIP2.JPG" width="80%" height="auto">
+                <h2>Music Name</h2>
+                <p>praesentium atque fugit rem perferendis necessitatibus eos!</p>
+                <span><a>Play Music</a></span>
+            </div>
+            <div class="item item1">
+                <img src="img/OIP2.JPG" width="80%" height="auto">
+                <h2>Music Name</h2>
+                <p>praesentium atque fugit rem perferendis necessitatibus eos!</p>
+                <span><a>Play Music</a></span>
+            </div>
+
         </div>
     </section>
-    <section class="section_games">
-        <h1>Play Game</h1>
-        <div>
-        <p id="points">Points:</p>
-        <p id="badge">Gold</p>
-        </div>
-        <button type="button" onclick="playgame()">Play Game</button>
+    <section class="section_three">
+            <img src="img/OIP2.jpg" width="80%" height="auto">
+            <div class="content">
+                <h1>About us</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore eius quo assumenda perferendis fugit facere, repellat esse cupiditate a maiores.</p>
+            </div>
     </section>
-    <section class="section_forms">
-        <form id="myForm">
-            <fieldset>
-                <div class="con">
-                <hr><h1 class="contact_head">Contact</h1><hr>
-                </div>
-                <label for="name">Name:</label><br>
-                <input type="text" id="nameInput" name="name"><br>
-                <label for="email">Email:</label><br>
-                <input type="email" id="emailInput" name="email"><br>
-                <label for="comment">Comment:</label><br>
-                <textarea id="commentInput" name="commentInput" rows="4" cols="40"></textarea><br>
-
-                <label for="rating1">Rate this website:</label><br>
-                <input type="radio" id="Bad" name="rating" value="Bad">
-                <label for="Bad">Bad</label><br>
-                <input type="radio" id="Ok" name="rating" value="Ok">
-                <label for="Ok">Ok</label><br>
-                <input type="radio" id="Good" name="rating" value="Good">
-                <label for="Good">Good</label><br>
-
-                <input class="button" type="submit" value="Submit">
-                <input class="button" type="reset" value="Reset">
-            </fieldset>
-        </form>
-    </section>
+    <!-- <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br> -->
     <footer>
-        <div>
-            <div class="gototopbox">
-            <a href="#">&#8679;</a>
-            </div>
-            <p>Copyright 2023 by Group 3.</p>
-            <p>All Rights Reserved.</p>
-            <a href="#">Link to page editor</a>
-        </div>
+        <p>Copyright by Group 3<br>All rights reserved<br>2023</p>
+        <a href="#">Link to page editor</a>
+        <div class="gototop"><a href="#">&#8679;</a></div>
     </footer>
-    <script src="script_s2.js"></script>
 </body>
 </html>

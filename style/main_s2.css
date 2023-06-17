@@ -1,0 +1,109 @@
+@import "global.css";
+
+
+/* first hero section */
+.hero{
+    height: 90vh; /*85*/
+    color: whitesmoke;
+    background-image: url("/Web-CW/img/OIP2.jpg");
+    background-size:cover;
+    justify-content: center;
+}
+.hero h1{
+    font-size: 2.5rem;
+    padding-top: 20vh;
+}
+.hero p{
+    font-size: 1rem;
+    padding-top: 50px;
+    min-width: 300px;
+}
+.hero h1,.hero p{
+    max-width: 50vw;
+    padding-left: 10vw;
+}
+/* section two */
+.section_two{
+    background-color: rgb(200, 200, 200);
+    height: fit-content;
+}
+.section_two h1{
+    text-align: center;
+    padding: 3vh;
+    font-size: 2.5rem;
+}
+.div_container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+.div_container .item{
+    display: block;
+    width: 180px;
+    height: auto;
+    border-radius: 5%;
+    margin: 10px;
+    padding: 10px;
+    background-color: whitesmoke;
+    /*border: 1px solid black;
+    */box-shadow: 2px 2px 10px cornflowerblue;
+    text-align: center;
+}
+.item img{
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.item h2{
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding-top: 20px;
+}
+.item p{
+    font-weight: 400;
+    font-size: 1rem;
+    padding: 10px;
+    text-align: left;
+    padding-top: 20px;
+}
+.item a{
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 10px;
+    padding:3px 10px;
+    transition:background-color 0.25s;
+    color: aliceblue;
+    background-color: black;
+}
+.item a:hover,.item a:hover{
+    background-color: cornflowerblue;
+}
+/* section three  */
+.section_three{
+    display: grid;
+    grid-template-rows: 80vh;
+    grid-template-columns: 50% 50%;
+    background-color: rgb(43, 76, 137);
+    justify-items: center;
+    text-align: center;
+    align-items:center;
+    color: white;
+}
+.section_three img{
+    grid-area: 1/1/2/2;
+    border-radius: 10px;
+}
+.section_three .content{
+    align-self: start;
+    text-align: left;
+    padding-top:140px;
+    width: calc(50%-50px);
+    grid-area: 1/2/2/3;
+    border-radius: 10px;
+}
+.content h1{
+    font-size: 2.5rem;
+}
+.content p{
+    display: flex;
+    font-size: 1rem;
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign Up</title>
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            * {
+            box-sizing: border-box;
+            }
+
+            .container {
+                background-color: white;
+            }
+
+            .form-container {
+                text-align:justify;
+            }
+
+            input[type=text], input[type=password] {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+            }
+
+            input[type=text]:focus, input[type=password]:focus {
+            outline: none;
+            }
+
+            hr {
+            border: 1px solid #f1f1f1;
+            margin-bottom: 25px;
+            }
+
+            .registerbtn {
+            padding: 16px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.8;
+            }
+
+            .registerbtn:hover {
+            opacity: 1;
+            }
+
+            a {
+            color: dodgerblue;
+            }
+
+            .signin {
+            text-align: center
+
+            }
+            input[type=checkbox] {
+                vertical-align: middle;
+                position: relative;
+                bottom: 1px;
+                padding: 10px;
+            }
+
+            .form-container{
+                justify-content: center;
+                align-items: center;
+                
+            }
+        </style>
+        <script> src="SignUpScript.js" </script>
+    </head>
+    <body>
+        <header>
+
+        </header>
+        <main>
+            <fieldset>
+                <form action="action_page.php">
+                    <div class="container">
+                        <h1>Register</h1>
+                        <hr>
+                    
+                        <label for="name"><b>Name</b></label>
+                        <input type="text" placeholder="Enter Name" name="name" id="email" required>
+                        
+                        <label for="age"><b>Age</b></label>
+                        <input type="text" placeholder="Enter Age" name="age" id="age" required>
+
+                        <label for="gender"><b>Gender</b></label>
+                        <input type="text" placeholder="Enter Gender" name="gender" id="gender" required>
+
+                        <label for="occupation"><b>Occupation</b></label>
+                        <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+                        <label for="email"><b>Email</b></label>
+                        <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+                        <label for="psw-repeat"><b>Repeat Password</b></label>
+                        <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+
+                        <div class="form-container">
+                            <b>Genres</b>
+                            <br>
+                            <label for="pop"><b>pop</b></label>
+                            <input type="checkbox" name= "pop" id="pop"> 
+                            <br>
+
+                            <label for="rock"><b>rock</b></label>
+                            <input type="checkbox" name="rock" id="rock">
+                            <br>
+
+                            <label for="jazz"><b>jazz</b></label>
+                            <input type="checkbox" name="jazz" id="jazz">
+
+                        </div>
+                        
+                        
+
+                        <button type="submit" class="registerbtn">Register</button>
+                    </div>
+
+                </form>
+            </fieldset>
+              
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+</html>

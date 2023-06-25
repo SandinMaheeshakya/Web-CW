@@ -4,9 +4,69 @@
         <title>
             Music Recommendation System Gallery Page
         </title>
-        <link rel="stylesheet" href="styles.css"> 
+        <!-- <link rel="stylesheet" href="styles.css">  -->
+        <style>
+            div.gallery{
+                margin: 5px;
+                border: 1px solid #ccc;
+                float: left;
+                width: 180px;
+                height: 180px;
+                transition: transform .2s;
+                padding: 4%;
+                 
+            }
+
+            div.gallery:hover {
+                border: 1px solid #777;
+                transform: scale(1,1.5);
+            }
+
+            div.gallery img {
+                width: 100%;
+                height: auto;
+            }
+
+
+            div.desc {
+                padding: 15px;
+                text-align: center;
+            }
+
+        </style>
     </head>
     <body>
-        <img src="Michael.jpeg" alt="cat" style="width:500px;height:600px">
+        <header>
+
+        </header>
+        <main>
+            <div class="gallery">
+                <a target="e" href="Michael.jpg">
+                    <img src="Michael.jpeg" alt="michael" height = "400" width = "400">
+                </a>
+                <div class="desc">Michael, sentenced to death for warcrimes in Bosnia</div>
+            </div>
+            <div class="gallery">
+                <a target="e" href="Obama.jpg">
+                    <img src="Obama.jpeg" alt="based" height = "400" width = "400">
+                </a>
+                <div class="desc">Obama, sentenced to life in prison for being hella based</div>
+            </div>
+            <div class="gallery">
+                <a target="e" href="Tax Fraud.jpg">
+                    <img src="Tax Fraud.jpg" alt="four dabloons" height = "400" width = "400">
+                </a>
+                <div class="desc">Tax Fraud</div>
+            </div>
+            <div class="gallery">
+                <a target="e" href="arson.jpg">
+                    <img src="arson.jpg" alt="arson" height = "400" width = "400">
+                </a>
+                <div class="desc">Sentenced to 10 years in prison for arson</div>
+            </div>
+        </main> 
+        <footer>
+
+        </footer>
     </body>
 </html>

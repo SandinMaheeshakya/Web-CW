@@ -68,21 +68,23 @@
                 
             }
         </style>
-        <script> src="SignUpScript.js" </script>
+
+        <script src="SignUpScript.js">  </script>
     </head>
     <body>
         <header>
-
+                
         </header>
         <main>
             <fieldset>
-                <form action="action_page.php">
+                <div id="error"></div>
+                <form action="/" id="form" method="GET">
                     <div class="container">
                         <h1>Register</h1>
                         <hr>
                     
                         <label for="name"><b>Name</b></label>
-                        <input type="text" placeholder="Enter Name" name="name" id="email" required>
+                        <input type="text" placeholder="Enter Name" name="name" id="name" required>
                         
                         <label for="age"><b>Age</b></label>
                         <input type="text" placeholder="Enter Age" name="age" id="age" required>
@@ -91,7 +93,7 @@
                         <input type="text" placeholder="Enter Gender" name="gender" id="gender" required>
 
                         <label for="occupation"><b>Occupation</b></label>
-                        <input type="text" placeholder="Enter Email" name="email" id="email" required>
+                        <input type="text" placeholder="Enter Email" name="occupation" id="occupation" required>
 
                         <label for="email"><b>Email</b></label>
                         <input type="text" placeholder="Enter Email" name="email" id="email" required>
@@ -100,7 +102,7 @@
                         <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
 
                         <label for="psw-repeat"><b>Repeat Password</b></label>
-                        <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+                        <input type="password" placeholder="Repeat Password" name="pswRepeat" id="pswRepeat" required>
 
                         <div class="form-container">
                             <b>Genres</b>
@@ -130,5 +132,6 @@
         <footer>
 
         </footer>
+
     </body>
 </html>

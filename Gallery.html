@@ -8,29 +8,33 @@
         <style>
             div.gallery{
                 margin: 5px;
-                border: 1px solid #ccc;
                 float: left;
-                width: 180px;
-                height: 180px;
+                /* width: 180px;
+                height: 180px; */
+                width: 10em;
+                height: 10em;
                 transition: transform .2s;
                 padding: 4%;
+                padding-top: 5%;    
+                background: 
                  
             }
 
             div.gallery:hover {
-                border: 1px solid #777;
                 transform: scale(1,1.5);
             }
 
             div.gallery img {
-                width: 100%;
-                height: auto;
+                width: 10em;
+                height: 10em;
+                border: 1px solid black ;
             }
 
 
             div.desc {
                 padding: 15px;
                 text-align: center;
+                background: #FF1000;
             }
 
         </style>
@@ -63,6 +67,12 @@
                     <img src="arson.jpg" alt="arson" height = "400" width = "400">
                 </a>
                 <div class="desc">Sentenced to 10 years in prison for arson</div>
+            </div>
+            <div class="gallery">
+                <a target="e" href="soy.png">
+                    <img src="soy.png" alt="soy" height = "400" width = "400">
+                </a>
+                <div class="desc">Soy</div>
             </div>
         </main> 
         <footer>

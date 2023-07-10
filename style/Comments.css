@@ -7,21 +7,15 @@ fieldset{
     border-radius: 10px;
     background-color: white;
 }
-input:not([type=radio],label,.button),textarea{
+input[type=text], input[type=password],input[type=email],textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
     border: none;
-    min-height: 30px;
-    min-width: 160px;
-    background-color: rgb(211, 211, 211);
-    border-radius: 5px;
+    background: #f1f1f1;
 }
-footer{
-    height:200px;
-    padding:10px;
-    align-items: center;
-    background-color:#454545;
-    color:white;
-    box-shadow: 1px 1px 5px lightblue;
-}
+
 .con{
     display: flex;
     flex-wrap: wrap;
@@ -29,7 +23,7 @@ footer{
     justify-content: center;
     padding-bottom: 10px;
 }
-hr{
+.con hr{
     width:100px;
     height: 1px;
 }

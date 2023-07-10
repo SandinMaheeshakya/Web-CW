@@ -20,11 +20,36 @@
     font-size: 50px;
     font-weight: 600;
     padding: 12px;
-    left: 37.5%;
+    left: 38.75%;
     background-color:gold;
+}
+.button{
+    width: 100%;
+    justify-content: center;
 }
 .section_games button{
     margin-top: 10px;
     width: 100px;
     cursor: pointer;
+}
+
+.con{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.con hr{
+    border: 1px solid black;
+    width:100px;
+    height: 1px;
+}
+.contact_head{
+    display: block;
+}
+.contact_head::after,.contact_head::before{
+    content:'';
+    padding: 10px;
 }

@@ -2,5 +2,24 @@
     padding-bottom: 50px;
 }
 #newsletter{
-    padding:50px;
+    padding:20px 40px;
+}
+.con{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.con hr{
+    border: 1px solid black;
+    margin-bottom: 40px;
+    width:100px;
+    height: 1px;
+}
+.contact_head{
+    display: block;
+}
+.contact_head::after,.contact_head::before{
+    content:'';
+    padding: 10px;
 }

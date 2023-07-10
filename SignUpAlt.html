@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Sign Up</title>
-        <link rel="stylesheet" href="style/main_s2.css">
+        <link rel="stylesheet" href="style/global.css">
         <link rel="stylesheet" href="style/SignUpAlt.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,7 +31,9 @@
                 <div id="error"></div>
                 <form action="/" id="form" method="GET">
                     <div class="container">
-                        <h1>Register</h1>
+                        <div class="con">
+                            <hr><h1 class="contact_head">Register</h1><hr>
+                        </div>
                         <hr>
                         <label for="name"><b>Name</b></label>
                         <input type="text" placeholder="Enter Name" name="name" id="name">
@@ -56,16 +58,17 @@
                         <div class="form-container">
                             <b>Genres</b>
                             <br>
+
+                            <input type="checkbox" name= "pop" id="pop">
                             <label for="pop"><b>pop</b></label>
-                            <input type="checkbox" name= "pop" id="pop"> 
                             <br>
 
-                            <label for="rock"><b>rock</b></label>
                             <input type="checkbox" name="rock" id="rock">
+                            <label for="rock"><b>rock</b></label>
                             <br>
 
-                            <label for="jazz"><b>jazz</b></label>
                             <input type="checkbox" name="jazz" id="jazz">
+                            <label for="jazz"><b>jazz</b></label>
 
                         </div>
                         <button type="submit" class="registerbtn">Register</button>

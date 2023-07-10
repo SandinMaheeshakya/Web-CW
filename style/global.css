@@ -20,7 +20,7 @@ section{
 }
 /* header and navigation links */
 header{
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
     font-size: 1rem;

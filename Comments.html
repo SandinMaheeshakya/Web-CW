@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/Comments.css">
+    <link rel="stylesheet" href="style/global.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">Music Melody</a>
+            <ul class="navigation_bar">
+                <li><a href="main_s2.html">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="#">Favourites</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="Playgame.html">PlayGame</a></li>
+                <li><a class="active" href="#">Comment</a></li>
+                <li><a href="newsletter.html">Newsletter</a></li>
+            </ul>
+            <a href="SignUpAlt.html">Sign-in</a>
+        </nav>
+    </header>
+    <section class="section_forms">
+        <form id="myForm">
+            <fieldset>
+                <div class="con">
+                <hr><h1 class="contact_head">Comment</h1><hr>
+                </div>
+                <label for="name">Name:</label><br>
+                <input type="text" id="nameInput" name="name"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="emailInput" name="email"><br>
+                <label for="comment">Comment:</label><br>
+                <textarea id="commentInput" name="commentInput" rows="4" cols="40"></textarea><br>
+
+                <label for="rating1">Rate this website:</label><br>
+                <input type="radio" id="Bad" name="rating" value="Bad">
+                <label for="Bad">Bad</label><br>
+                <input type="radio" id="Ok" name="rating" value="Ok">
+                <label for="Ok">Ok</label><br>
+                <input type="radio" id="Good" name="rating" value="Good">
+                <label for="Good">Good</label><br>
+
+                <input class="button" type="submit" value="Submit">
+                <input class="button" type="reset" value="Reset">
+            </fieldset>
+        </form>
+    </section>
+    <footer>
+        <p>&copy;Copyright by Group 3<br>All rights reserved<br>2023</p>
+        <a href="#">Link to page editor</a>
+        <div class="gototop"><a href="#">&#11161;</a></div>
+    </footer>
+    <script src="script/Comments.js"></script>
+</body>
+</html>

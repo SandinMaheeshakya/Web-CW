@@ -1,0 +1,42 @@
+.section_forms{
+    border: none;
+}
+fieldset{
+    padding: 20px;
+    border:none;
+    border-radius: 10px;
+    background-color: white;
+}
+input:not([type=radio],label,.button),textarea{
+    border: none;
+    min-height: 30px;
+    min-width: 160px;
+    background-color: rgb(211, 211, 211);
+    border-radius: 5px;
+}
+footer{
+    height:200px;
+    padding:10px;
+    align-items: center;
+    background-color:#454545;
+    color:white;
+    box-shadow: 1px 1px 5px lightblue;
+}
+.con{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+hr{
+    width:100px;
+    height: 1px;
+}
+.contact_head{
+    display: block;
+}
+.contact_head::after,.contact_head::before{
+    content:'';
+    padding: 10px;
+}

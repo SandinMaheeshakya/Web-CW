@@ -1,0 +1,30 @@
+.section_games{
+    color: white;
+    background-color: #454545;
+}
+.section_games div{
+    align-items: center;
+    display: flex;
+}
+#points{
+    display:none;
+    font-weight: 600;
+}
+#badge{
+    display:none;
+    height: 100px;
+    width: auto;
+    position: relative;
+    color: white;
+    border-radius: 10px;
+    font-size: 50px;
+    font-weight: 600;
+    padding: 12px;
+    left: 37.5%;
+    background-color:gold;
+}
+.section_games button{
+    margin-top: 10px;
+    width: 100px;
+    cursor: pointer;
+}

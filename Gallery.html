@@ -58,7 +58,67 @@
                 text-align: center;
             }
 
+            h1 {
+            color: green;
+            font-size: 80px;
+            font-weight: bold;
+            text-align: center;
+            padding-top: 22px;
+            }
+            
+            h6 {
+                color: green;
+                font-size: 20px;
+                font-weight: bold;
+                text-align: center;
+                padding-top: 60px;
+                margin-bottom: 20px;
+            }
+
+            .gallery-images img{
+                height: 92px;
+                margin: 10px 0;
+                cursor: pointer;
+                display: block;
+                opacity: .5;
+            }
+
+            .gallery-images img:hover {
+                opacity: 1;
+            }
+
+            .gallery-images {
+                margin: 10px;
+                height: 10em;
+                float: left;
+            }    
+            
+            body {
+                background-color: black;
+            }
+
+            .container {
+                margin:auto;
+                align-items: center;
+                position: absolute;
+            }
+
+            .image-container img {
+                transition: transform 1s;
+            }
+            
+            .image-container img:hover{
+                transform: scale(1.5);
+                cursor: zoom-in;
+            }
+            
+            .image-container {
+                float: right;
+                padding: 10px;
+            }
+
         </style>
+        
     </head>
     <body>
         <header>
@@ -68,36 +128,59 @@
 
         </header>
         <main>
-            <div class="gallery">
-                <a target="e" href="Michael.jpg">
-                    <img src="Michael.jpeg" alt="michael" height = "400" width = "400">
+            <!-- <div class="gallery">
+                <a target="e" href="vinyl.jpg">
+                    <img src="vinyl.png" alt="michael" height = "400" width = "400">
                 </a>
-                <div class="desc">Michael, sentenced to death for warcrimes</div>
             </div>
             <div class="gallery">
-                <a target="e" href="Obama.jpg">
-                    <img src="Obama.jpeg" alt="based" height = "400" width = "400">
+                <a target="e" href="vinyl.jpg">
+                    <img src="vinyl.png" alt="based" height = "400" width = "400">
                 </a>
-                <div class="desc">Obama, sentenced to life in prison for being hella based</div>
             </div>
             <div class="gallery">
-                <a target="e" href="Tax Fraud.jpg">
-                    <img src="Tax Fraud.jpg" alt="four dabloons" height = "400" width = "400">
+                <a target="e" href="vinyl.jpg">
+                    <img src="vinyl.png" alt="four dabloons" height = "400" width = "400">
                 </a>
-                <div class="desc">Tax Fraud</div>
             </div>
             <div class="gallery">
-                <a target="e" href="arson.jpg">
-                    <img src="arson.jpg" alt="arson" height = "400" width = "400">
+                <a target="e" href="vinyl.jpg">
+                    <img src="vinyl.png" alt="arson" height = "400" width = "400">
                 </a>
-                <div class="desc">Sentenced to 10 years in prison for arson</div>
             </div>
             <div class="gallery">
-                <a target="e" href="soy.png">
-                    <img src="soy.png" alt="soy" height = "400" width = "400">
+                <a target="e" href="vinyl.png">
+                    <img src="vinyl.png" alt="soy" height = "400" width = "400">
                 </a>
-                <div class="desc">Soy</div>
+            </div> -->
+            <div class="container">
+                <div class="gallery-images">
+                    <div class="image-container">
+                        <img id="img-box" src="vinyl.png" alt="click here">
+                    </div>
+                    <div class="image-container">
+                        <img id="img-box" src="vinyl.png" alt="click here">
+                    </div>
+                    <div class="image-container">
+                        <img id="img-box" src="vinyl.png" alt="click here">
+                    </div>
+                    <div class="image-container">
+                        <img id="img-box" src="vinyl.png" alt="click here">
+                    </div>
+                    <div class="image-container">
+                        <img id="img-box" src="vinyl.png" alt="click here">
+                    </div>
+                </div>
+
+                
             </div>
+
+            <script>
+                function imageFunction(productSmalling) {
+                    var productSmallImg = document.getElementById("img-box");
+                    productFullImg.src = productSmallImg.src;
+                }
+            </script>
         </main> 
         <footer>
 

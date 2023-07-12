@@ -214,6 +214,42 @@ hr{
     font-size: 30px;
     margin-top: -10px;
 }
+
+/* Navigation Bar CSS */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float:left;
+}
+
+li a {
+    display: block; 
+    color: whitesmoke;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 1s;
+}
+
+li a:hover {
+    background-color: #FF1000;
+    transition: 1s ease-out;
+
+}
+
+
+.navigation {
+    font-family: Helvetica;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
 footer a{
     text-decoration:none;
     color: white;

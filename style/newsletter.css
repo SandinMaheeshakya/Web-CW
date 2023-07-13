@@ -1,8 +1,26 @@
 #newsletter h1{
-    padding-bottom: 50px;
+    padding-bottom: 20px;
 }
 #newsletter{
-    padding:20px 40px;
+    padding: 20px;
+    border:none;
+    border-radius: 10px;
+    background-color: white;
+}
+input[type=text], input[type=email] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    }
+input[type=text]:focus, input[type=email]:focus {
+    outline: none;
+}
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
 }
 .con{
     display: flex;
@@ -12,7 +30,7 @@
 }
 .con hr{
     border: 1px solid black;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     width:100px;
     height: 1px;
 }

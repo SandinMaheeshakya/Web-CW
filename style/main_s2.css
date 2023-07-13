@@ -2,7 +2,7 @@
 
 /* first hero section */
 .hero{
-    height: 90vh; /*85*/
+    height: 85vh;
     color: whitesmoke;
     background-image: url("img/OIP2.jpg");
     background-size:cover;

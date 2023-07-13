@@ -15,15 +15,21 @@ input[type=text], input[type=password],input[type=email],textarea {
     border: none;
     background: #f1f1f1;
 }
-
+input[type=text]:focus, input[type=password]:focus, textarea:focus{
+    outline: none;
+}
+hr {
+    border: 1px solid #f1f1f1;
+}
 .con{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    padding-bottom: 10px;
+    margin-bottom: 20px;
 }
 .con hr{
+    border: 1px solid black;
     width:100px;
     height: 1px;
 }

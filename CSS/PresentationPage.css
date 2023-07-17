@@ -1,0 +1,90 @@
+body {
+margin: 0;
+box-sizing: border-box;
+}
+
+/* main */
+.intro {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 520px;
+background-color: orangered;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+h1 {
+font-family: sans-serif;
+font-size: 60px;
+color: white;
+font-weight: bold;
+text-transform: uppercase;
+margin: 0;
+}
+
+.intro p {
+font-size: 20px;
+color: #d1d1d1;
+text-transform: uppercase;
+margin: 20px 0;
+}
+
+.intro button {
+background-color: white;
+color: #000;
+padding: 10px 25px;
+border: none;
+border-radius: 5px;
+font-size: 20px;
+font-weight: bold;
+cursor: pointer;
+}
+
+.AboutUs {
+font-family: Helvetica;
+background-color: black;
+display: flex;
+justify-content: space-around;
+align-items: center;
+padding: 40px 80px;
+}
+
+.AboutUs .WhyUseMRS {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0 40px;
+}
+
+.AboutUs .WhyUseMRS i {
+width: fit-content;
+font-size: 50px;
+color: white;
+border-radius: 50%;
+border: 2px solid white;
+padding: 12px;
+}
+
+.AboutUs .WhyUseMRS .why-heading {
+font-size: 20px;
+color: white;
+text-transform: uppercase;
+margin: 10px 0;
+}
+
+.AboutUs .WhyUseMRS .why-text {
+font-size: 15px;
+text-align: justify;
+color: white;
+margin: 10px 0;
+}
+
+.AboutUs .WhyUseMRS p {
+    color:white;
+    text-align: justify;
+}

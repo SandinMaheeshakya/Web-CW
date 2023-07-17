@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="SignUpPageScript.js"></script>
+        <link rel="stylesheet" href="SignUpPage.css">
+    </head>
+    <body>
+        <form name="SignUpForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+            <div class="container">
+                <label for="name"><b>Name</b></label>
+                <input type="text" placeholder="Enter Name" name="name" id="name">
+                
+                <label for="age"><b>Age</b></label>
+                <input type="text" placeholder="Enter Age" name="age" id="age">
+
+                <label for="gender"><b>Gender</b></label>
+                <input type="text" placeholder="Enter Gender" name="gender" id="gender">
+
+                <label for="occupation"><b>Occupation</b></label>
+                <input type="text" placeholder="Enter Occupation" name="occupation" id="occupation">
+
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" id="email">
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" id="psw">
+
+                <label for="psw-repeat"><b>Repeat Password</b></label>
+                <input type="password" placeholder="Repeat Password" name="pswRepeat" id="pswRepeat">
+
+                <div class="checkbox-container">
+                    <b>Genres</b>
+                    <br>
+                    <label for="pop"><b>pop</b></label>
+                    <input type="checkbox" name="pop" id="pop">
+                    <br>
+                    <label for="rock"><b>rock</b></label>
+                    <input type="checkbox" name="rock" id="rock">
+                    <br>
+                    <label for="jazz"><b>jazz</b></label>
+                    <input type="checkbox" name="jazz" id="jazz">
+
+                </div>
+            </div>
+            
+
+
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>

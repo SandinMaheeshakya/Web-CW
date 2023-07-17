@@ -1,189 +1,41 @@
 <!DOCTYPE html>
-
 <html>
     <head>
-        <title>
-            Music Recommendation System Gallery Page
-        </title>
-        <style>
-            body {
-                margin: 0;
-                box-sizing: border-box;
-            }
-
-            .gallery-intro {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                width: 100%;
-                height: 520px;
-                background-color: orangered;
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
-            }
-
-            .gallery-intro h1 {
-                font-family: sans-serif;
-                font-size: 60px;
-                color: white;
-                font-weight: bold;
-                text-transform: uppercase;
-                margin: 0;
-            }
-
-            div.gallery{
-                margin: 5px;
-                float: left;
-                width: 10em;
-                height: 10em;
-                transition: transform .2s;
-                padding: 4%;
-                padding-top: 5%;     
-            }
-
-            div.gallery:hover {
-                transform: 0.5s;
-            }
-
-            div.gallery img {
-                width: 100%;
-                height: auto;
-                border: 1px solid black ;
-            }
-
-            div.desc {
-                padding: 15px;
-                text-align: center;
-            }
-
-            h1 {
-            color: green;
-            font-size: 80px;
-            font-weight: bold;
-            text-align: center;
-            padding-top: 22px;
-            }
-            
-            h6 {
-                color: green;
-                font-size: 20px;
-                font-weight: bold;
-                text-align: center;
-                padding-top: 60px;
-                margin-bottom: 20px;
-            }
-
-            .gallery-images img{
-                height: 92px;
-                margin: 10px 0;
-                cursor: pointer;
-                display: block;
-                opacity: .5;
-            }
-
-            .gallery-images img:hover {
-                opacity: 1;
-            }
-
-            .gallery-images {
-                margin: 10px;
-                height: 10em;
-                float: left;
-            }    
-            
-            body {
-                background-color: black;
-            }
-
-            .container {
-                margin:auto;
-                align-items: center;
-                position: absolute;
-            }
-
-            .image-container img {
-                transition: transform 1s;
-            }
-            
-            .image-container img:hover{
-                transform: scale(1.5);
-                cursor: zoom-in;
-            }
-            
-            .image-container {
-                float: right;
-                padding: 10px;
-            }
-
-        </style>
-        
+        <title> Gallery</title>
+        <link rel="stylesheet" type="text/css" href="Gallery.css">
     </head>
-    <body>
+    <body> 
         <header>
-            <div class="gallery-intro"> 
+            <div class="gallery-intro">
                 <h1>Gallery</h1>
             </div>
-
         </header>
-        <main>
-            <!-- <div class="gallery">
-                <a target="e" href="vinyl.jpg">
-                    <img src="vinyl.png" alt="michael" height = "400" width = "400">
-                </a>
+        <div class="container">
+            <div class="gallery">
+                <a href="vinyl.png"><img src="vinyl.png"></a>
+                    <div class="desc"> A record</div>
+            </div>    
+            <div class="gallery">
+                <a href="vinyl.png"><img src="vinyl.png"></a>
+                    <div class="desc"> A record</div>
             </div>
             <div class="gallery">
-                <a target="e" href="vinyl.jpg">
-                    <img src="vinyl.png" alt="based" height = "400" width = "400">
-                </a>
+                <a href="vinyl.png"><img src="vinyl.png"></a>
+                    <div class="desc"> A record</div>
             </div>
             <div class="gallery">
-                <a target="e" href="vinyl.jpg">
-                    <img src="vinyl.png" alt="four dabloons" height = "400" width = "400">
-                </a>
+                <a href="vinyl.png"><img src="vinyl.png"></a>
+                    <div class="desc"> A record</div>
             </div>
             <div class="gallery">
-                <a target="e" href="vinyl.jpg">
-                    <img src="vinyl.png" alt="arson" height = "400" width = "400">
-                </a>
+                <a href="vinyl.png"><img src="vinyl.png"></a>
+                    <div class="desc"> A record</div>
             </div>
             <div class="gallery">
-                <a target="e" href="vinyl.png">
-                    <img src="vinyl.png" alt="soy" height = "400" width = "400">
-                </a>
-            </div> -->
-            <div class="container">
-                <div class="gallery-images">
-                    <div class="image-container">
-                        <img id="img-box" src="vinyl.png" alt="click here">
-                    </div>
-                    <div class="image-container">
-                        <img id="img-box" src="vinyl.png" alt="click here">
-                    </div>
-                    <div class="image-container">
-                        <img id="img-box" src="vinyl.png" alt="click here">
-                    </div>
-                    <div class="image-container">
-                        <img id="img-box" src="vinyl.png" alt="click here">
-                    </div>
-                    <div class="image-container">
-                        <img id="img-box" src="vinyl.png" alt="click here">
-                    </div>
-                </div>
-
-                
+                <a href="vinyl.png"><img src="vinyl.png"></a>
+                    <div class="desc"> A record</div>
             </div>
-
-            <script>
-                function imageFunction(productSmalling) {
-                    var productSmallImg = document.getElementById("img-box");
-                    productFullImg.src = productSmallImg.src;
-                }
-            </script>
-        </main> 
-        <footer>
-
-        </footer>
+        </div>
+        
     </body>
-</html> 
+</html>

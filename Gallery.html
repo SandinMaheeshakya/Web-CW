@@ -1,41 +1,46 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title> Gallery</title>
-        <link rel="stylesheet" type="text/css" href="CSS/Gallery.css">
-    </head>
-    <body> 
-        <header>
-            <div class="gallery-intro">
-                <h1>Gallery</h1>
-            </div>
-        </header>
-        <div class="container">
-            <div class="gallery">
-                <a href="vinyl.png"><img src="vinyl.png"></a>
-                    <div class="desc"> A record</div>
-            </div>    
-            <div class="gallery">
-                <a href="vinyl.png"><img src="vinyl.png"></a>
-                    <div class="desc"> A record</div>
-            </div>
-            <div class="gallery">
-                <a href="vinyl.png"><img src="vinyl.png"></a>
-                    <div class="desc"> A record</div>
-            </div>
-            <div class="gallery">
-                <a href="vinyl.png"><img src="vinyl.png"></a>
-                    <div class="desc"> A record</div>
-            </div>
-            <div class="gallery">
-                <a href="vinyl.png"><img src="vinyl.png"></a>
-                    <div class="desc"> A record</div>
-            </div>
-            <div class="gallery">
-                <a href="vinyl.png"><img src="vinyl.png"></a>
-                    <div class="desc"> A record</div>
-            </div>
-        </div>
-        
-    </body>
+  <head>
+    <title>Gallery</title>
+    <link rel="stylesheet" type="text/css" href="CSS/Gallery.css" />
+    <script src="Javascript/Gallery.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="gallery-intro">
+        <h1>Gallery</h1>
+      </div>
+    </header>
+    <div class="container">
+      <div class="gallery">
+        <img src="vinyl.png" alt="Vinyl" onclick="focusGallery(this)" ; />
+      </div>
+
+      <div class="gallery">
+        <img src="vinyl.png" alt="Vinyl" onclick="focusGallery(this)" ; />
+      </div>
+
+      <div class="gallery">
+        <img src="vinyl.png" alt="Vinyl" onclick="focusGallery(this)" ; />
+      </div>
+
+      <div class="gallery">
+        <img src="vinyl.png" alt="Vinyl" onclick="focusGallery(this)" ; />
+      </div>
+
+      <div class="gallery">
+        <img src="vinyl.png" alt="Vinyl" onclick="focusGallery(this)" ; />
+      </div>
+    </div>
+    
+    <br>
+    
+    <div class="gallery-focus">
+      <span onclick="this.parentElement.style.display='none'" class="closebtn"
+        >&times;</span
+      >
+      <img id="expandedImg">
+      <div id="imgtext"></div>
+    </div>
+  </body>
 </html>

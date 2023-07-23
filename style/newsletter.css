@@ -7,15 +7,15 @@
     border-radius: 10px;
     background-color: white;
 }
-input[type=text], input[type=email] {
+.inputField{
     width: 100%;
     padding: 15px;
-    margin: 5px 0 22px 0;
+    margin-top: 5px;
     display: inline-block;
     border: none;
     background: #f1f1f1;
     }
-input[type=text]:focus, input[type=email]:focus {
+.inputField:focus {
     outline: none;
 }
 hr {
@@ -40,4 +40,15 @@ hr {
 .contact_head::after,.contact_head::before{
     content:'';
     padding: 10px;
+}
+#title{
+    font-size: large;
+    margin-bottom: 25px;
+    display:inline-block;
+}
+.validation_view{
+    color:red;
+    font-size: small;
+    margin-bottom: 20px;
+    display:inline-block;
 }

@@ -33,15 +33,20 @@
             <hr><h1 class="contact_head">News Letter</h1><hr>
         </div>
         <hr>
-        <form>
-            <label>Signup for our News Letter</label>
+        <form name="nlForm" onsubmit="return required()">
+            <label id="title">Signup for our News Letter</label>
             <br><br>
+
             <label for="name">Full name :</label><br>
-            <input type="text" placeholder="Enter Name" id="name">
+            <input type="text" placeholder="Enter Name" id="name" name="name" class="inputField"><br>
+            <label class="validation_view"></label>
             <br><br>
+
             <label for="email">Email :</label><br>
-            <input type="email"  placeholder="Enter Email" id="email" name="email">
+            <input type="text"  placeholder="Enter Email" id="email" name="email" class="inputField" onchange="email_validate(this)"><br>
+            <label id="email_valid_view" class="validation_view"></label>
             <br><br>
+
             <input class="button" type="submit" value="Submit">
             <input class="button" type="reset" value="Reset">
         </form>
@@ -51,5 +56,6 @@
         <a href="#">Link to page editor</a>
         <div class="gototop"><a href="#">&#11161;</a></div>
     </footer>
+    <script src="script/NewsLetter.js"></script>
 </body>
 </html>

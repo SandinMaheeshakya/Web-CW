@@ -1,20 +1,23 @@
 function required() {
     let i = document.forms["nlForm"].getElementsByClassName("inputField");
-    let emptyField=true;
+    let valid=true;
 
     for (let index = 0; index < i.length; index++) {
         x = i[index].value;
         if (x == "" || x == null) {
             document.getElementsByClassName("validation_view")[index].innerHTML="Required*";
-            emptyField = false;
+            valid = false;
         }else{
             document.getElementsByClassName("validation_view")[index].innerHTML="";
         }
     }
-    if (emptyField) {
-        emptyField=email_validate(document.getElementById("email"));
+    if (valid) {
+        valid=email_validate(document.getElementById("email"));
     }
-    return emptyField;
+    if(valid){
+        alert("Dear "+document.getElementById("name").value+", you have successfully subscribed for a personalized newsletter.")
+    }
+    return valid;
 }
 
 function email_validate(email){

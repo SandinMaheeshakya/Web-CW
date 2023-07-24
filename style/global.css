@@ -111,6 +111,10 @@ footer p {
     opacity: 0.5;
 }
 
+.gototop:hover{
+    opacity: 1;
+}
+
 .gototop a {
     width: 30px;
     height: auto;

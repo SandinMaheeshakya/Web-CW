@@ -7,6 +7,7 @@
     --text-color: black;
     --on-hover: #F7F7F7;
     --no-hover:rgba(0, 0, 0, 0.15);
+    --hover-shadow:0 10px 30px rgba(0, 0, 0, 0.15);
     display: block;
     width: 250px;
     height: 320px;
@@ -23,7 +24,7 @@
 .item:hover{
     /* background-color: #F7F7F7; */
     background-color: var(--on-hover);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    box-shadow: var(--hover-shadow);
 }
 .item img{
     margin-top: 7px;

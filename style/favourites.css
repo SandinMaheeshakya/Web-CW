@@ -79,3 +79,8 @@
     font-size: x-large;
     margin-top: 7px;
 }
+.attr_changer{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:right   ;
+}

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Newsletter</title>
+    <title>Favourites</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
-<body  onload="loadXML()">
+<body  onload="loadXMLDoc()">
     <header>
         <nav>
             <a href="#"><img src="style/img/melody.png" height="20px"></a>
@@ -19,11 +19,11 @@
                 <li><a href="MainPage.html">Home</a></li>
                 <li><a href="#">About Us</a></li>
                 <li><a href="Gallery.html">Gallery</a></li>
-                <li><a href="#">Favourites</a></li>
+                <li><a class="active" href="#">Favourites</a></li>
                 <li><a href="#">Shop</a></li>
                 <li><a href="Playgame.html">PlayGame</a></li>
                 <li><a href="Comments.html">Comment</a></li>
-                <li><a class="active" href="#">Newsletter</a></li>
+                <li><a href="newsletter.html">Newsletter</a></li>
             </ul>
             <a href="SignUpAlt.html">Sign-in</a>
         </nav>
@@ -35,7 +35,7 @@
     </main>
     <footer>
         <p>&copy;Copyright by Group 3<br>All rights reserved<br>2023</p>
-        <a href="Student4_EditorPage.html">Link to page editor</a>
+        <br>Link to page Editor: <a class="button" href="Student4_EditorPage.html">Student 4</a>
         <div class="gototop"><a href="#">&#11161;</a></div>
     </footer>
     <script src="script/favourites.js"></script>

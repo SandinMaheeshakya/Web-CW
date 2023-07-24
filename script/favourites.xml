@@ -1,0 +1,68 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<songs>
+    <genre name="Rock">
+      <song>
+        <title>Back in Black</title>
+        <artist>AC/DC</artist>
+        <year>1980</year>
+      </song>
+      <song>
+        <title>Stairway to Heaven</title>
+        <artist>Led Zeppelin</artist>
+        <year>1971</year>
+      </song>
+    </genre>
+    
+    <genre name="Pop">
+      <song>
+        <title>Shape of You</title>
+        <artist>Ed Sheeran</artist>
+        <year>2017</year>
+      </song>
+      <song>
+        <title>Bad Guy</title>
+        <artist>Billie Eilish</artist>
+        <year>2019</year>
+      </song>
+    </genre>
+    
+    <genre name="Hip Hop">
+      <song>
+        <title>Lose Yourself</title>
+        <artist>Eminem</artist>
+        <year>2002</year>
+      </song>
+      <song>
+        <title>Sicko Mode</title>
+        <artist>Travis Scott</artist>
+        <year>2018</year>
+      </song>
+    </genre>
+    
+    <genre name="Country">
+      <song>
+        <title>Wagon Wheel</title>
+        <artist>Old Crow Medicine Show</artist>
+        <year>2004</year>
+      </song>
+      <song>
+        <title>Before He Cheats</title>
+        <artist>Carrie Underwood</artist>
+        <year>2005</year>
+      </song>
+    </genre>
+    
+    <genre name="Electronic">
+      <song>
+        <title>Strobe</title>
+        <artist>Deadmau5</artist>
+        <year>2009</year>
+      </song>
+      <song>
+        <title>Clarity</title>
+        <artist>Zedd</artist>
+        <year>2012</year>
+      </song>
+    </genre>
+  </songs>
+  

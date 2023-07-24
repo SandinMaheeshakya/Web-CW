@@ -4,6 +4,7 @@
 .hero {
     display: flex;
     height: 95vh;
+    width: 100%;
     color: rgb(245, 245, 245);
     background-image: url("img/OIP3.jpg");
     background-size:cover;
@@ -47,7 +48,7 @@
     text-align: center;
 }
 
-hr {
+.section_two hr {
     position: relative;
     right: -38.5%;
     width: 22vw;
@@ -58,7 +59,8 @@ hr {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 10px 80px;
+    margin: 0px 80px;
+    padding: 10px;
 }
 
 .div_container .item {
@@ -66,11 +68,10 @@ hr {
     width: 220px;
     height: 200px;
     border-radius: 5%;
-    margin: 2px 10px;
+    margin: 2px 15px;
     padding: 5px;
-    color: rgb(255, 255, 255);
-    background-color: rgba(0, 0, 0, 0.15);
-    background-image: url("img/OIP3.jpg");
+    border:1px solid rgb(214, 214, 214);
+    box-shadow:  0px 8px 24px rgba(149, 157, 165, 0.2);
     background-position: 50%;
     background-size: cover;
     text-align: center;
@@ -78,12 +79,37 @@ hr {
 }
 
 .item:hover{
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.5);
 }
 
-.item img {
-    margin-top: 5px;
-    border-radius: 10px;
+/* background images for flex item */
+.item_1{
+    color: white;
+    background-image: url("img/OIP3.jpg");
+}
+.item_2{
+    background-image: url("img/OIP10.jpg");
+}
+.item_3{
+    color: white;
+    background-image: url("img/OIP11.jpg");
+}
+.item_4{
+    background-image: url("img/OIP7.jpg");
+}
+.item_5{
+    background-image: url("img/OIP16.jpg");
+}
+.item_6{
+    color: white;
+    background-image: url("img/OIP6.jpg");
+}
+.item_7{
+    background-image: url("img/OIP17.jpg");
+}
+.item_8{
+    color: white;
+    background-image: url("img/OIP12.jpg");
 }
 
 .item h2 {
@@ -106,10 +132,14 @@ hr {
     transition: all 0.2s linear;
     color: aliceblue;
     transition: all linear 0.25s;
+    position: sticky;
+    top: 100%;
+    margin-bottom: 20px;
 }
 
 .item a:hover {
     cursor: pointer;
+    background-color: #F7F7F7;
 }
 
 .item:hover a {
@@ -117,29 +147,59 @@ hr {
     opacity: 2;
     z-index: 2;
 }
-
-/* section three */
-.section_three {
+/* section three  */
+.section_three{
+    text-align: center;
+    background-color: #232323;
+    height: fit-content;
+}
+.section_three h1,.section_three hr{
+    color: white;
+}
+.section_three hr{
+    position: relative;
+    right: -38.5%;
+    width: 22vw;
+    border: 1.5px solid rgb(255, 255, 255);
+}
+.music .button{
+    position: sticky;
+    top: 100%;
+}
+.section_three .music{
+    width: 130px;
+    background-color: #F7F7F7;
+}
+.section_three .music:hover{
+    box-shadow: 0px 0px 0px 5px rgba(189, 189, 192, 0.5);
+}
+.section_three .music img{
+    border-radius: 5%;
+    box-shadow:  0px 7px 29px 0px rgba(100, 100, 111, 0.5);
+}
+/* section four */
+.section_four {
     display: grid;
-    grid-template-rows: 80vh;
+    padding: 80px;
+    grid-template-rows:max-content;
     grid-template-columns: 50% 50%;
     background-color: rgb(43, 76, 137);
     /* background-image: url("img/OIP3.jpg"); */
+    height: fit-content;
     justify-items: center;
     text-align: center;
     align-items: center;
     color: rgb(255, 255, 255);
 }
 
-.section_three img {
+.section_four img {
     grid-area: 1/1/2/2;
     border-radius: 10px;
 }
 
-.section_three .content {
+.section_four .content {
     align-self: start;
     text-align: justify;
-    padding-top: 120px;
     margin-right: 10px;
     width: calc(50%-50px);
     grid-area: 1/2/2/3;

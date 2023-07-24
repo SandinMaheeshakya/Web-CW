@@ -34,12 +34,12 @@
         </div>
         <div class="theme_changer">
             <label for="theme_change">Theme :</label>
-            <select id="theme_change">
-                <option value="light">light</option>
-                <option value="small">smaller</option>
-                <option value="medium">medium</option>
-                <option value="large">large</option>
-                <option value="larger">larger</option>
+            <select id="theme_change" onchange="changeTheme(this)">
+                <option value="light" selected>Light</option>
+                <option value="dark">Dark</option>
+                <option value="beige">Beige</option>
+                <option value="dark_blue">Dark Blue</option>
+                <option value="green">Green</option>
             </select>
         </div>
         <div class="div_container"></div>
@@ -50,5 +50,6 @@
         <div class="gototop"><a href="#">&#11161;</a></div>
     </footer>
     <script src="script/favourites.js"></script>
+    <script src="script/change_theme.js"></script>
 </body>
 </html>

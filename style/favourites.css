@@ -4,21 +4,25 @@
     justify-content:center;
 }
 .div_container .item{
+    --text-color: black;
+    --on-hover: #F7F7F7;
+    --no-hover:rgba(0, 0, 0, 0.15);
     display: block;
     width: 250px;
     height: 320px;
     border-radius: 5%;
     margin:10px 60px;
-    padding: 5px;
-    color: rgb(255, 255, 255);
-    background-color: rgba(0, 0, 0, 0.15);
+    padding: 5px;   
+    background-color: var(--no-hover);
     background-position: 50%;
     background-size: cover;
     text-align: center;
     transition: all 0.2s linear;
+    
 }
 .item:hover{
-    background-color: #F7F7F7;
+    /* background-color: #F7F7F7; */
+    background-color: var(--on-hover);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 .item img{
@@ -44,9 +48,9 @@
     padding:3px 10px;
     transition:all 0.2s linear;
 }
-.desc{
+.item .desc{
     margin-top: 10px;
-    color: black;
+    color: var(--text-color);
 }
 .item a:hover{
     cursor: pointer;
@@ -74,8 +78,8 @@
     content:'';
     padding: 10px;
 }
-.title{
-    color: black;
+.item .title{
+    color: var(--text-color);
     font-size: x-large;
     margin-top: 7px;
 }

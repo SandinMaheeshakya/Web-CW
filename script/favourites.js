@@ -18,8 +18,6 @@ function loadXMLDoc() {
     for (i = 0; i <x.length; i++) { 
       y=x[i].childNodes;
 
-      console.log(x[i].childNodes);
-
       favs += "<div class='item'><div class='title'>" +
       y[1].innerHTML +
       "</div><img src='" + y[9].innerHTML +"' alt='"+y[1].innerHTML + "' height='160px' width='160px'>"+

@@ -79,8 +79,22 @@
     font-size: x-large;
     margin-top: 7px;
 }
-.attr_changer{
+.theme_changer{
+    padding: 20px;
     display:flex;
     flex-wrap: wrap;
     justify-content:right   ;
+}
+#theme_change{
+    border:none;
+    padding: 10px 20px;
+    border-radius:5px;
+    margin-left: 10px;
+}
+#theme_change:focus{
+    outline:none;
+}
+label{
+    margin-top: 7px;
+    font-size: large;
 }

@@ -1,13 +1,6 @@
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.0;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-}
 .about_me {
-    /* background-color: #007BFF; */
-    background-image: url("img/OIP2.jpg");
+    background-image: url("img/forms_bg/cube_bg.jpg");
+    background-position: top;
     color: #fff;
     padding: 5px;
     text-align: center;
@@ -20,7 +13,7 @@ img {
     margin: 20px auto;
 }
 .container {
-    max-width: 800px;
+    max-width: 600px;
     margin: 20px auto;
     padding: 20px;
     background-color: #fff;
@@ -40,7 +33,4 @@ ul {
 a {
     color: #007BFF;
     text-decoration: none;
-}
-a:hover {
-    text-decoration: underline;
 }

@@ -65,7 +65,7 @@ nav {
 }
 
 .navigation_bar li a,
-nav a {
+nav a{
     text-decoration: none;
     border-radius: 6px;
     padding: 1px 5px;
@@ -139,15 +139,14 @@ button {
     color: #FFFFFF;
     cursor: pointer;
     display: inline-block;
-    font-size: 1rem;
-    font-weight: 800;
+    font-size: 1rem!important;
+    font-weight: 800!important;
     line-height: 16px;
-    /* min-height: 40px; */
     outline: 0;
     padding: 5px 5px;
     text-align: center;
     vertical-align: middle;
-    transition: background-color 0.25s;
+    transition: all linear 0.25s;
 }
 
 .button:hover,
@@ -160,7 +159,7 @@ button:hover {
     padding: 20px;
     border:none;
     background-color: #eaeaea;
-    background-image: url("img/OIP2.jpg");
+    background-image: url("img/forms_bg/cube_bg.jpg");
     background-size: cover;
     background-position: center;
 }

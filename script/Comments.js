@@ -5,21 +5,36 @@ const form = document.getElementById('myForm');
 form.addEventListener('submit', function(event) {
   // Prevent the default form submission behavior
   event.preventDefault();
+  let valid_input = true;
 
   // Retrieve the input values
   const name = document.getElementById('nameInput').value;
+  if(name.trim()==""){
+    alert("Name must be filled out");
+    valid_input = false;
+  }
+
   const email = document.getElementById('emailInput').value;
+  if(email.trim()==""){
+    alert("Email must be filled out");
+    valid_input = false;
+  }
+
   const comment = document.getElementById('commentInput').value;
-  const rating = document.querySelector('input[name="rating"]:checked').value;
+  if(comment.trim()==""){
+    alert("Comment must be filled out");
+    valid_input = false;
+  }
 
+  const rating = document.querySelector('input[name="rating"]:checked');
+  if(!rating){
+    alert("Rating must be filled out");
+    valid_input = false;
+  }
 
-  console.log('Name:', name);
-  console.log('Email:', email);
-  console.log('Comment:', comment);
-  console.log('Rating is:', rating);
-
-  const sentence = "Dear "+ name + ", Thank you very much for " +
-  "your feedback. You have rated our site as "+rating + ", and your comment was "+comment;
-  alert(sentence);
-  // You can also send the values to a server, update the UI, or perform other operations here
+  if(valid_input){
+    const sentence = "Dear "+ name + ", Thank you very much for " +
+    "your feedback. You have rated our site as "+rating.value + ", and your comment was "+comment;
+    alert(sentence);
+  }
 });

@@ -1,53 +1,42 @@
-// Define a dictionary that maps button IDs to song URLs
-var songDictionary = {
-  playAudio: 'script/song.mp3',
-  playAudio2: 'script/song.mp3',
-  playAudio3: 'script/song.mp3',
-  playAudio4: 'script/song.mp3',
-  playAudio5: 'script/song.mp3'
-};
-// Function to play the song based on the button ID
-function playSongFromDictionary(buttonId) {
-  var songUrl = songDictionary[buttonId];
-  if (songUrl) {
-    // Pause all other audio elements before playing the new song
-    pauseAllSongs();
+const playButtons = document.querySelectorAll('.playButton');
+const audioPlayer = document.getElementById('audioPlayer');
 
-    var audio = document.getElementById(buttonId.replace("play", "test"));
-    audio.src = songUrl;
-    audio.play();
-
-    // Update all play buttons to "Play" state
-    document.querySelectorAll(".playbutton").forEach(function (button) {
-      button.innerHTML = "Play";
-    });
-    // Update the clicked button to "Pause" state
-    document.getElementById(buttonId).innerHTML = "&#10074;&#10074;";
-  }
+// Function to set the audio source dynamically
+function setAudioSource(audioSrc) {
+  audioPlayer.src = audioSrc;
 }
 
-// Add event listeners to play buttons to play the corresponding songs
-document.querySelectorAll(".playbutton").forEach(function (button) {
-  button.addEventListener("click", function () {
-    var buttonId = button.id;
-    if (button.innerHTML === "Play") {
-      playSongFromDictionary(buttonId);
+// Function to play the audio
+function playAudio() {
+  audioPlayer.play();
+}
+
+// Function to pause the audio
+function pauseAudio() {
+  audioPlayer.pause();
+}
+
+// Function to pause all other songs
+function pauseAllOtherSongs(currentButton) {
+  playButtons.forEach(button => {
+    if (button !== currentButton) {
+      button.innerHTML = 'Play';
+    }
+  });
+}
+
+// Add event listeners to each play button
+playButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const audioSrc = button.dataset.audio;
+    if (button.innerHTML === 'Play') {
+      setAudioSource(audioSrc);
+      playAudio();
+      pauseAllOtherSongs(button);
+      button.innerHTML = 'Pause';
     } else {
-      button.innerHTML = "Play"; // Change button back to play icon
-      pauseAudio(buttonId.replace("play", "test"));
+      pauseAudio();
+      button.innerHTML = 'Play';
     }
   });
 });
-
-// Function to pause the audio based on the button ID
-function pauseAudio(audioId) {
-  var audio = document.getElementById(audioId);
-  audio.pause();
-}
-
-// Function to pause all songs
-function pauseAllSongs() {
-  document.querySelectorAll("audio").forEach(function (audio) {
-    audio.pause();
-  });
-}

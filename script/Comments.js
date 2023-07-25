@@ -8,33 +8,59 @@ form.addEventListener('submit', function(event) {
   let valid_input = true;
 
   // Retrieve the input values
-  const name = document.getElementById('nameInput').value;
+  const name = document.getElementById('name').value;
   if(name.trim()==""){
-    alert("Name must be filled out");
+    document.getElementById("name_validation").innerHTML="Required*";
     valid_input = false;
+  }else{
+    document.getElementById("name_validation").innerHTML="";
   }
 
-  const email = document.getElementById('emailInput').value;
+  const email = document.getElementById('email').value;
   if(email.trim()==""){
-    alert("Email must be filled out");
+    document.getElementById("email_validation").innerHTML="Required*";
     valid_input = false;
+  }else{
+    document.getElementById("email_validation").innerHTML="";
   }
 
-  const comment = document.getElementById('commentInput').value;
+  const comment = document.getElementById('comment').value;
   if(comment.trim()==""){
-    alert("Comment must be filled out");
+    document.getElementById("comment_validation").innerHTML="Required*";
     valid_input = false;
+  }else{
+    document.getElementById("comment_validation").innerHTML="";
   }
 
   const rating = document.querySelector('input[name="rating"]:checked');
   if(!rating){
-    alert("Rating must be filled out");
+    document.getElementById("rating_validation").innerHTML="Required*";
     valid_input = false;
+  }else{
+    document.getElementById("rating_validation").innerHTML="";
   }
 
   if(valid_input){
     const sentence = "Dear "+ name + ", Thank you very much for " +
     "your feedback. You have rated our site as "+rating.value + ", and your comment was "+comment;
-    alert(sentence);
+    showPopup(sentence);
   }
 });
+
+// Get references to the popup elements
+const popupBox = document.getElementById('popupBox');
+const message = document.getElementById("popUpMsg");
+const overlay = document.getElementById('overlay');
+
+// Function to show the popup
+function showPopup(sentence) {
+  message.innerHTML = sentence;
+  popupBox.style.display = 'block';
+  overlay.style.display = 'block';
+}
+
+// Function to hide the popup
+function hidePopup() {
+  popupBox.style.display = 'none';
+  overlay.style.display = 'none';
+}

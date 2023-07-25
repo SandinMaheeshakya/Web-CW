@@ -60,7 +60,7 @@ function playgame(){
       document.getElementById("badge").innerHTML="Gold";
       document.getElementById("points").style.display="block";
       document.getElementById("points").innerHTML=`Points : ${points}`;
-      alert(`\"Congratulation! You have earned ${points} points with a ${badge} badge\", please claim the points in your next purchase`);
+      showPopup(`\"Congratulation! You have earned ${points} points with a ${badge} badge\"<br> please claim the points in your next purchase`);
     }else if(points>5){
       badge='Silver'
       document.getElementById("badge").style.display="block";
@@ -68,7 +68,7 @@ function playgame(){
       document.getElementById("badge").innerHTML="Silver";
       document.getElementById("points").style.display="block";
       document.getElementById("points").innerHTML=`Points : ${points}`;
-      alert(`\"Congratulation! You have earned ${points} points with a ${badge} badge\", please claim the points in your next purchase`);
+      showPopup(`\"Congratulation! You have earned ${points} points with a ${badge} badge\"<br> please claim the points in your next purchase`);
     }else if(points>3){
       badge='Bronze'
       document.getElementById("badge").style.display="block";
@@ -76,7 +76,7 @@ function playgame(){
       document.getElementById("badge").innerHTML="Bronze";
       document.getElementById("points").style.display="block";
       document.getElementById("points").innerHTML=`Points : ${points}`;
-      alert(`\"Congratulation! You have earned ${points} points with a ${badge} badge\", please claim the points in your next purchase`);
+      showPopup(`\"Congratulation! You have earned ${points} points with a ${badge} badge\"<br> please claim the points in your next purchase`);
     }else{
       badge='No'
       document.getElementById("badge").style.display="block";
@@ -84,6 +84,24 @@ function playgame(){
       document.getElementById("badge").innerHTML="None";
       document.getElementById("points").style.display="block";
       document.getElementById("points").innerHTML=`Points : ${points}`;
-      alert(`\"Sorry! You have earned ${points} points with a ${badge} badge\", Better luck next time`);
+      showPopup(`\"Sorry! You have earned ${points} points with a ${badge} badge\"<br> Better luck next time`);
     }
   }
+
+  // Get references to the popup elements
+const popupBox = document.getElementById('popupBox');
+const message = document.getElementById("popUpMsg");
+const overlay = document.getElementById('overlay');
+
+// Function to show the popup
+function showPopup(sentence) {
+  message.innerHTML = sentence;
+  popupBox.style.display = 'block';
+  overlay.style.display = 'block';
+}
+
+// Function to hide the popup
+function hidePopup() {
+  popupBox.style.display = 'none';
+  overlay.style.display = 'none';
+}

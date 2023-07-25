@@ -14,13 +14,13 @@
 <body>
     <header>
         <nav>
-            <a href="#"><img src="style/img/melody.png" height="20px"></a>
+            <a href="#"><img src="style/img/melody.png" height="20px" alt="Melody logo"></a>
             <ul class="navigation_bar">
                 <li><a href="MainPage.html">Home</a></li>
-                <li><a href="#">About Us</a></li>
+                <li><a href="About US.html">About Us</a></li>
                 <li><a href="Gallery.html">Gallery</a></li>
                 <li><a href="favourites.html">Favourites</a></li>
-                <li><a href="#">Shop</a></li>
+                <li><a href="BuyProducts.html">Shop</a></li>
                 <li><a href="Playgame.html">PlayGame</a></li>
                 <li><a class="active" href="#">Comment</a></li>
                 <li><a href="newsletter.html">Newsletter</a></li>
@@ -35,16 +35,23 @@
                     <hr><h1 class="comment_head">Comments</h1><hr>
                 </div>
                 <hr>
-                <label for="name">Name:</label><br>
-                <input type="text" placeholder="Enter Name" id="nameInput" name="name"><br>
+                <label for="name">Name:</label>
+                <label class="validation_view" id="name_validation"></label><br>
+                <input type="text" placeholder="Enter Name" id="name" name="nameInput" class="inputField">
+                <br>
 
-                <label for="email">Email:</label><br>
-                <input type="email" placeholder="Enter Email" id="emailInput" name="email"><br>
+                <label for="email">Email:</label>
+                <label class="validation_view" id="email_validation"></label><br>
+                <input type="email" placeholder="Enter Email" id="email" name="emailInput" class="inputField">
+                <br>
 
-                <label for="comment">Comment:</label><br>
-                <textarea id="commentInput" placeholder="Enter Comment" name="commentInput" rows="4" cols="40"></textarea><br>
+                <label for="comment">Comment:</label>
+                <label class="validation_view" id="comment_validation"></label><br>
+                <textarea id="comment" placeholder="Enter Comment" name="commentInput" class="inputField" rows="4" cols="40"></textarea>
+                <br>
 
-                <label for="rating1">Rate this website:</label><br>
+                <label for="rating">Rate this website:</label>
+                <label class="validation_view" id="rating_validation"></label><br>
 
                 <input type="radio" id="Bad" name="rating" value="Bad">
                 <label for="Bad">Bad</label><br>
@@ -60,6 +67,12 @@
             </fieldset>
         </form>
     </section>
+    <div id="overlay"></div>
+    <div id="popupBox">
+            <h2>Thank you for Commenting</h2>
+            <p id="popUpMsg">This is the content of the popup box.</p>
+            <button onclick=hidePopup() id="closeButton">Close</button>
+    </div>
     <footer>
         <p>&copy;Copyright by Group 3<br>All rights reserved<br>2023<br>Link to page Editor: <a class="button" href="Student2_EditorPage.html">Student 2</a></p>
         <div class="gototop"><a href="#">&#11161;</a></div>

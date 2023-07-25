@@ -20,13 +20,30 @@ function playgame(){
       ["Which instrument is a small keyboard played with the hands and often used in electronic music?", ["Synthesizer","Trombone", "Cello", "Flute"]],
       ["Which instrument is a member of the brass family and is often used in marching bands?", ["Trombone","Clarinet", "Violin", "Piano"]]
     ]);
-    let points = 10;
+
+
+    const questions = [genreQuiz,musicianQuiz,instrumentQuiz]
+    let points = 0;
     let badge;
+    const randomNumber = Math.floor(Math.random() * 3) + 1;
+    const chosen_quiz = questions[randomNumber];
+
+
     for(let i=0;i<5;i++){
-      const Question = Array.from(genreQuiz.keys())[i];
-      const Answer = genreQuiz.get(Question);
+
+      const Question = Array.from(chosen_quiz.keys())[i];
+      let Answer = chosen_quiz.get(Question);
+
+      let randomAnswer = Math.floor(Math.random() * 4);
+      [Answer[0],Answer[randomNumber]] = [Answer[randomNumber],Answer[0]]
+
       const input = prompt(Question+`\n1.${Answer[0]}\n2.${Answer[1]}\n3.${Answer[2]}\n4.${Answer[3]}`);
-      if(Answer[0] == Answer[input-1]){
+
+      if(input==null){
+        break;
+      }
+
+      if(Answer[randomAnswer] == Answer[input-1]){
         console.log("Correct Answer");
         points+=2;
       }else{
@@ -35,27 +52,31 @@ function playgame(){
       }
     }
     console.log(points);
-    if(points>15){
+
+    if(points>7){
       badge='Gold'
       document.getElementById("badge").style.display="block";
       document.getElementById("badge").style.backgroundColor="#FFD700";
       document.getElementById("badge").innerHTML="Gold";
       document.getElementById("points").style.display="block";
       document.getElementById("points").innerHTML=`Points : ${points}`;
-    }else if(points>13){
+      alert(`\"Congratulation! You have earned ${points} points with a ${badge} badge\", please claim the points in your next purchase`);
+    }else if(points>5){
       badge='Silver'
       document.getElementById("badge").style.display="block";
       document.getElementById("badge").style.backgroundColor="#C0C0C0";
       document.getElementById("badge").innerHTML="Silver";
       document.getElementById("points").style.display="block";
       document.getElementById("points").innerHTML=`Points : ${points}`;
-    }else if(points>10){
+      alert(`\"Congratulation! You have earned ${points} points with a ${badge} badge\", please claim the points in your next purchase`);
+    }else if(points>3){
       badge='Bronze'
       document.getElementById("badge").style.display="block";
       document.getElementById("badge").style.backgroundColor="#CD7F32";
       document.getElementById("badge").innerHTML="Bronze";
       document.getElementById("points").style.display="block";
       document.getElementById("points").innerHTML=`Points : ${points}`;
+      alert(`\"Congratulation! You have earned ${points} points with a ${badge} badge\", please claim the points in your next purchase`);
     }else{
       badge='No'
       document.getElementById("badge").style.display="block";
@@ -63,6 +84,6 @@ function playgame(){
       document.getElementById("badge").innerHTML="None";
       document.getElementById("points").style.display="block";
       document.getElementById("points").innerHTML=`Points : ${points}`;
+      alert(`\"Sorry! You have earned ${points} points with a ${badge} badge\", Better luck next time`);
     }
-    alert(`\"Congratulation! You have earned ${points} points with a ${badge} badge\", please claim the points in your next purchase`);
   }

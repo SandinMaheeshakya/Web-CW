@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AddToCart</title>
+
+    <!-- font awesome style sheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- JS File-->
+    <script src="script/BuyProducts.js" defer></script>
+
+    <!--CSS File-->
+    <link rel="stylesheet" href="style/BuyProducts.css">
+
+
+</head>
+<body> 
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#"><img src="style/img/melody.png" height="20px" alt="Melody Logo"></a>
+        <ul class="navigation_bar">
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="About US.html">About Us</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="favourites.html">Favourites</a></li>
+            <li><a href="BuyProducts.html">Shop</a></li>
+            <li><a href="Playgame.html">PlayGame</a></li>
+            <li><a href="Comments.html">Comment</a></li>
+            <li><a href="newsletter.html">Newsletter</a></li>
+        </ul>
+        <a href="SignUpAlt.html">Sign-in</a>
+    </nav>
+
+    <button class="fontEdit"onclick="increaseFontSize()">+</button>
+    <button class="fontEdit"onclick="decreaseFontSize()">-</button>
+
+    <div class="header">
+        <span><h2>Products</h2></span>
+    </div>
+
+    <div class="Cart">
+        <img src="style/img/cart.png">
+        <span class="item-count">0</span>   
+        
+    </div>
+
+
+    <!--Product Containers with Necessary Items-->
+
+    <div class="container">
+
+        <div class="products-container">
+
+            <div class="product">
+                <img data-name="p-1" src="style/img/Product1.png" height ="200" width="240">
+                <h3>Yamaha PSR-E373 Keyboard</h3>
+                <div class="price">$85.69</div>
+                    <button class="addToCart-button"onclick="addtoCart(this)"data-price="10.99">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img data-name="p-2" src="style/img/Product2.jpg" height="200" width="240">
+                <h3>Mini Mp3 Player</h3>
+                <div class="price">$23.94</div>
+                <button class="addToCart-button"onclick="addtoCart(this)"data-price="22.99">Add to Cart</button>
+            </div>
+
+
+            <div class="product">
+                <img data-name="p-3" src="style/img/Product3.png" height="200" width="240">
+                <h3>JBL Tune 510BT</h3>
+                <div class="price">$53.94</div>
+                <button class="addToCart-button"onclick="addtoCart(this)"data-price="10.99">Add to Cart</button>
+            </div>
+
+
+            <div class="product">
+                <img  data-name="p-4" src="style/img/Product4.jpeg" height="200" width="240">
+                <h3>Apple AirPods (3rd generation)</h3>
+                <div class="price">$122.94</div>
+                <button class="addToCart-button"onclick="addtoCart(this)"data-price="10.99">Add to Cart</button>
+            </div>
+
+
+            <div class="product" >
+                <img data-name="p-5" src="style/img/Product5.jpg" height="200" width="240">
+                <h3>Steinway Model D Grand Piano</h3>
+                <div class="price">$1248.94</div>
+                <button class="addToCart-button"onclick="addtoCart(this)"data-price="10.99">Add to Cart</button>
+            </div>
+
+
+            <div class="product">
+                <img  data-name="p-6" src="style/img/Product6.jpg" height="200" width="240">
+                <h3>VANGOA 41" SEMI ACOUSTIC GUITAR</h3>
+                <div class="price">$230.94</div>
+                <button class="addToCart-button"onclick="addtoCart(this)"data-price="10.99">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img data-name="p-7" src="style/img/Product7.jpg" height="200" width="240">
+                <h3>Pearl Roadshow Complete Drum Set </h3>
+                <div class="price">$1250.00</div>
+                <button class="addToCart-button" onclick="addtoCart(this)"data-price="10.99">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img  data-name="p-8" src="style/img/Product8.jpg" height="200" width="240">
+                <h3>FL Studio 20 Signature Bundle (Boxed)</h3>
+                <div class="price">$90.00</div>
+                <button class="addToCart-button" onclick="addtoCart(this)"data-price="10.99">Add to Cart</button>
+            </div>
+
+
+
+            <!--PopUp Products with Respective Descrtiptions-->
+            <div class="products-preview">
+
+                <div class="preview" data-target="p-1">
+                    <i class="fas fa-times"></i>
+                    <img src="style/img/Product1.png" height="200" width="240">
+                    <h3>Yamaha PSR-E373 Keyboard</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>               
+                        <span>( 165 )</span>
+                    </div>
+
+                    <p>Introducing the Yamaha PSR-E373 Keyboard, now available at an incredible sale price!
+                          Featuring a wide range of premium sounds, from grand pianos to electric guitars, 
+                          the PSR-E373 offers exceptional audio quality that will captivate your audience.
+                           With its touch-sensitive keys, you'll experience a responsive and expressive
+                            playing experience like never before.</p>
+                    <button class="addToCart-button"onclick="addtoCart(this)"data-price="10.99">Add to Cart</button>
+
+                </div>
+
+
+
+                <div class="preview" data-target="p-2">
+                    <i class="fas fa-times"></i>
+                    <img src="style/img/Product2.jpg" height="200" width="240">
+                    <h3>Mini MP3 player</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(120)</span>
+                    </div>
+
+                    <p>
+                        Introducing our Mini MP3 Player,
+                         a pocket-sized music companion that delivers high-quality sound on the go.
+                         Stay entertained for hours with this portable music player that fits right 
+                         in your pocket. 
+                        </p>
+
+                    <button class="addToCart-button"onclick="addtoCart(this)"data-price="22.99">Add to Cart</button>
+
+
+                </div>
+
+
+
+                <div class="preview" data-target="p-3">
+                    <i class="fas fa-times"></i>
+                    <img src="style/img/Product3.png" height="200" width="240">
+                    <h3>JBL Tune 510BT</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(210)</span>
+                    </div>
+
+                    <p>Experience music like never before with the JBL Tune 510BT. These wireless on-ear 
+                        headphones deliver powerful, immersive sound with JBL Pure Bass technology. Enjoy 
+                        the convenience of Bluetooth connectivity, hands-free calling, and long-lasting battery
+                         life. Stylish and comfortable, the JBL Tune 510BT is your perfect companion for on-the-go
+                          music enjoyment.</p>
+
+                    <button class="addToCart-button"onclick="addtoCart(this)"data-price="10.99">Add to Cart</button>
+
+                </div>
+
+
+
+
+                <div class="preview" data-target="p-4">
+                    <i class="fas fa-times"></i>
+                    <img src="style/img/Product4.jpeg" height="200" width="240">
+                    <h3>Apple Airpods (3rd generation)</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(233)</span>
+                    </div>
+
+                    <p>
+                        Experience wireless freedom with the Apple AirPods (3rd generation). 
+                        With the new Adaptive EQ 
+                        feature, the music automatically tunes to the shape of your ear for a personalized 
+                        listening experience. Enjoy hands-free Siri access, effortless setup, and long battery 
+                        life for all-day use. .</p>
+
+                    <button class="addToCart-button"onclick="addtoCart(this)"data-price="10.99">Add to Cart</button>
+
+                </div>
+
+
+
+
+                <div class="preview" data-target="p-5">
+                    <i class="fas fa-times"></i>
+                    <img src="style/img/Product5.jpg" height="200" width="240">
+                    <h3>Steinway Model D Grand Piano</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(138)</span>
+                    </div>
+
+                    <p>
+                        Unleash musical brilliance with the Steinway Model D Grand Piano.
+                         Crafted to perfection, this iconic instrument captivates with its rich tone and 
+                         unmatched quality. Experience the pinnacle of piano excellence and elevate your
+                          performances to new heights.</p>
+
+                    <button class="addToCart-button" onclick="addtoCart(this)"data-price="10.99">Add to Cart</button>
+
+                </div>
+
+
+
+
+                <div class="preview" data-target="p-6">
+                    <i class="fas fa-times"></i>
+                    <img src="style/img/Product6.jpg" height="200" width="240">
+                    <h3>VANGOA 41" SEMI ACOUSTIC GUITAR</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(200)</span>
+                    </div>
+
+                    <p>Discover the soulful sound of the VANGOA 41" Semi-Acoustic Guitar.
+                        This versatile instrument combines the warm tones of an acoustic 
+                        guitar with the amplified power of an electric guitar. Whether you'
+                        re strumming at an intimate gathering or rocking out on stage, the VANGOA 41"
+                         Semi-Acoustic Guitar delivers exceptional sound quality and effortless playability
+                        </p>
+
+
+                    <button class="addToCart-button" onclick="addtoCart(this)"data-price="10.99">Add to Cart</button>
+
+                </div>
+
+
+
+
+                <div class="preview" data-target="p-7">
+                    <i class="fas fa-times"></i>
+                    <img src="style/img/Product7.jpg" height="200" width="240">
+                    <h3>Pearl Roadshow Complete Drum Set</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(300)</span>
+                    </div>
+
+                    <p>Unleash your inner rhythm with the Pearl Roadshow Complete Drum Set.
+                         This comprehensive drum kit is perfect for beginners and intermediate drummers
+                          alike. With its durable construction and professional-quality sound, the Pearl
+                           Roadshow drum set offers an immersive and dynamic drumming experience. From
+                            smooth grooves to explosive beats, this drum set delivers a wide range of tones
+                             and incredible versatility.</p>
+
+                    <button class="addToCart-button"onclick="addtoCart(this)"data-price="10.99">Add to Cart</button>
+
+                </div>
+
+
+
+
+                <div class="preview" data-target="p-8">
+                    <i class="fas fa-times"></i>
+                    <img src="style/img/Product8.jpg" height="200" width="240">
+                    <h3>FL Studio 20 Signature Bundle (Boxed)</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(350)</span>
+                    </div>
+
+                    <p>
+                        FL Studio is a popular digital audio workstation
+                         (DAW) used for music production. It offers a
+                          user-friendly interface and a wide range of tools and
+                           features for composing, recording, editing, and mixing music.
+                            With FL Studio, you can create professional-quality tracks and 
+                            explore various genres of music. It is a versatile software that 
+                            empowers musicians and producers to bring their musical ideas to 
+                            life with ease and creativity.</p>
+
+                    <button class="addToCart-button"onclick="addtoCart(this)"data-price="10.99">Add to Cart</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+         <!--Side Cart-->
+        <div class="side-cart">
+            <h1>Side Cart</h1>
+            <div class="cart-items"></div>
+            <div class="Checkout">
+              <a class="checkoutButton" href="paymentForm.html">Chekout</a>
+              <div class="total">Total : $0.00</div>              
+              <div class="closeCart">close</div>
+        
+            </div>
+          </div>
+
+
+          <!--Footer page-->
+          <footer>
+            <p>&copy;Copyright by Group 3<br>All rights reserved<br>2023<br>Link to page Editor: <a class="button" href="Student1_EditorPage.html">Student 1</a></p>
+            <div class="gototop"><a href="#">&#11161;</a></div>
+        </footer>
+
+
+
+</body>
+</html>

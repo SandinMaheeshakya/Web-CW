@@ -19,7 +19,7 @@
                 <li><a href="MainPage.html">Home</a></li>
                 <li><a href="#">About Us</a></li>
                 <li><a href="Gallery.html">Gallery</a></li>
-                <li><a href="#">Favourites</a></li>
+                <li><a href="favourites.html">Favourites</a></li>
                 <li><a href="#">Shop</a></li>
                 <li><a href="Playgame.html">PlayGame</a></li>
                 <li><a href="Comments.html">Comment</a></li>
@@ -28,28 +28,36 @@
             <a href="SignUpAlt.html">Sign-in</a>
         </nav>
     </header>
-    <div id="newsletter">
-        <div class="con">
-            <hr><h1 class="contact_head">News Letter</h1><hr>
+    <div id="newsletter" class="section_forms">
+        <fieldset>
+        <div class="newsletter_head_div">
+            <hr><h1 class="newsletter_head">News Letter</h1><hr>
         </div>
         <hr>
-        <form>
-            <label>Signup for our News Letter</label>
+        <form name="nlForm" onsubmit="return required()">
+            <label id="title">Signup for our News Letter</label>
             <br><br>
+
             <label for="name">Full name :</label><br>
-            <input type="text" placeholder="Enter Name" id="name">
+            <input type="text" placeholder="Enter Name" id="name" name="name" class="inputField"><br>
+            <label class="validation_view"></label>
             <br><br>
+
             <label for="email">Email :</label><br>
-            <input type="email"  placeholder="Enter Email" id="email" name="email">
+            <input type="text"  placeholder="Enter Email" id="email" name="email" class="inputField" onchange="email_validate(this)"><br>
+            <label id="email_valid_view" class="validation_view"></label>
             <br><br>
+
             <input class="button" type="submit" value="Submit">
             <input class="button" type="reset" value="Reset">
         </form>
+    </fieldset>
     </div>
     <footer>
         <p>&copy;Copyright by Group 3<br>All rights reserved<br>2023</p>
-        <a href="#">Link to page editor</a>
+        <br>Link to page Editor: <a class="button" href="Student4_EditorPage.html">Student 4</a>
         <div class="gototop"><a href="#">&#11161;</a></div>
     </footer>
+    <script src="script/NewsLetter.js"></script>
 </body>
 </html>

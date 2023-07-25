@@ -17,22 +17,23 @@
                     <li><a href="MainPage.html">Home</a></li>
                     <li><a href="#">About Us</a></li>
                     <li><a href="Gallery.html">Gallery</a></li>
-                    <li><a href="#">Favourites</a></li>
+                    <li><a href="favourites.html">Favourites</a></li>
                     <li><a href="#">Shop</a></li>
                     <li><a href="Playgame.html">PlayGame</a></li>
                     <li><a href="Comments.html">Comment</a></li>
                     <li><a href="newsletter.html">Newsletter</a></li>
                 </ul>
-                <a class="active" href="SignUpAlt.html">Sign-in</a>
+                <a class="active button" href="SignUpAlt.html">Sign-in</a>
             </nav>
         </header>
         <main>
+        <div class="section_forms">
             <fieldset>
                 <div id="error"></div>
                 <form action="/" id="SignUpForm" onsubmit="return validateForm()"method="post">
                     <div class="container">
-                        <div class="con">
-                            <hr><h1 class="contact_head">Register</h1><hr>
+                        <div class="register_head_div">
+                            <hr><h1 class="register_head">Register</h1><hr>
                         </div>
                         <hr>
                         <label for="name"><b>Name</b></label>
@@ -55,31 +56,29 @@
                         <label for="psw-repeat"><b>Repeat Password</b></label>
                         <input type="password" placeholder="Repeat Password" name="pswRepeat" id="pswRepeat">
 
-                        <div class="form-container">
-                            <b>Genres</b>
-                            <br>
+                        <b>Genres</b>
+                        <br>
 
-                            <input type="checkbox" name= "pop" id="pop">
-                            <label for="pop"><b>pop</b></label>
-                            <br>
+                        <input type="checkbox" name= "pop" id="pop">
+                        <label for="pop"><b>pop</b></label>
+                        <br>
 
-                            <input type="checkbox" name="rock" id="rock">
-                            <label for="rock"><b>rock</b></label>
-                            <br>
+                        <input type="checkbox" name="rock" id="rock">
+                        <label for="rock"><b>rock</b></label>
+                        <br>
 
-                            <input type="checkbox" name="jazz" id="jazz">
-                            <label for="jazz"><b>jazz</b></label>
+                        <input type="checkbox" name="jazz" id="jazz">
+                        <label for="jazz"><b>jazz</b></label>
+                        <br>
 
-                        </div>
-                        <button type="submit" class="registerbtn">Register</button>
+                        <button type="submit" class="button">Register</button>
                     </div>
-
                 </form>
             </fieldset>
+        </div>
         </main>
         <footer>
-            <p>&copy;Copyright by Group 3<br>All rights reserved<br>2023</p>
-            <a href="Student1_EditorPage.html">Link to page editor</a>
+            <p>&copy;Copyright by Group 3<br>All rights reserved<br>2023<br>Link to page Editor: <a class="button" href="Student1_EditorPage.html">Student 1</a></p>
             <div class="gototop"><a href="#">&#11161;</a></div>
         </footer>
     </body>

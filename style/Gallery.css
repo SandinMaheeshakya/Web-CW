@@ -75,6 +75,12 @@
     padding: 10px;
 }
 
+.container-panel {
+    margin: auto;
+    width: 50%;
+    
+}
+
 .container-focus {
     /* width: 50%;
     height: 50%;
@@ -83,8 +89,8 @@
     width: 200px;
     height: 200px;
     border-radius: 5%;
-    margin:10px 60px;
-    padding: 5px;
+    /* margin:10px 60px; */
+    margin: auto;
     color: rgb(255, 255, 255);
     background-color: rgba(0, 0, 0, 0.15);
     background-position: 50%;
@@ -95,6 +101,8 @@
 }
 
 .container-focus img{
-    margin-top: 5px;
     border-radius: 10px;
+    height: 200px;
+    width: 200px;
 }
+

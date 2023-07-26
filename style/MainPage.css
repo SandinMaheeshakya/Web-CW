@@ -2,32 +2,33 @@
 
 /* first hero section */
 .hero {
-    display: flex;
+    display: grid;
+    grid-template-rows:max-content;
+    grid-template-columns: 50% 50%;
+    padding: 0px 100px;
     height: 95vh;
     width: 100%;
     color: rgb(245, 245, 245);
     background-image: url("img/MainPage_img/hero_bg.jpg");
     background-size:cover;
+    align-content: center;
     background-position:center;
     justify-content: space-evenly;
 }
-
-.hero h1 {
-    padding-top: 20vh;
+.hero #hero_heading{
+    grid-area: 1/1/2/2;
 }
-
-.hero p {
-    padding-top: 50px;
-    min-width: 300px;
+.hero #hero_video{
+    grid-area: 1/2/2/3;
+    align-self: start;
+    width: calc(50%-50px);
 }
-
-.hero h1,
-.hero p {
-    max-width: 50vw;
+.hero h1,.hero p{
+    margin-bottom:30px;
 }
-
-.video {
-    margin-top: 20vh;
+#hero_heading img{
+    margin-top: -70px;
+    margin-bottom: 20px;
 }
 
 /* section two */
@@ -195,6 +196,7 @@
 .section_four img {
     grid-area: 1/1/2/2;
     border-radius: 10px;
+    box-shadow: 1px 1px 6px 1px rgb(118, 118, 118);
 }
 
 .section_four .content {

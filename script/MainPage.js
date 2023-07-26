@@ -40,3 +40,8 @@ playButtons.forEach(button => {
     }
   });
 });
+
+function playMusic(){
+  const targetElement = document.getElementById("playMusic");
+  window.scrollTo(0, targetElement.offsetTop);
+}

@@ -41,7 +41,7 @@
             <p>Discover and groove with us - Your ultimate music destination <br>
                 for an immersive, soul-stirring experience.<br>
                 Listen now and let the melody of life enchant you.</p>
-            <p><a class="button" href="Gallery.html">Play Music &#9655;</a></p>
+            <p><button onclick="playMusic()">Play Music &#9655;</button></p>
         </div>
         <div id="hero_video">
             <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/1__CAdTJ5JU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -63,7 +63,7 @@
             <div class="item item_2" id="about-us">
                 <h2>Our Musical Journey</h2>
                 <p>Discover the story behind creating this harmonious platform.</p>
-                <a class="button" href="#">Visit About Us&#8594;</a>
+                <a class="button" href="About US.html">Visit About Us&#8594;</a>
             </div>
 
             <div class="item item_3" id="gallery">
@@ -75,13 +75,13 @@
             <div class="item item_4" id="shop">
                 <h2>Melodic Merchandise</h2>
                 <p>Find music-themed merchandise, from artist apparel to accessories.</p>
-                <a class="button" href="#">Visit Shop&#8594;</a>
+                <a class="button" href="BuyProducts.html">Visit Shop&#8594;</a>
             </div>
 
             <div class="item item_5" id="favorites">
                 <h2>Your Melody Haven</h2>
                 <p>Create and manage your personalized collection of favorite songs.</p>
-                <a class="button" href="#">Visit Favourites&#8594;</a>
+                <a class="button" href="favourites.html">Visit Favourites&#8594;</a>
             </div>
 
             <div class="item item_6" id="play-game">
@@ -109,7 +109,7 @@
     <section class="section_three">
         <h1>Featured Music</h1>
         <hr>
-        <div class="div_container">
+        <div class="div_container" id="playMusic">
             <audio id="audioPlayer" controls hidden>
                 Your browser does not support the audio element.
             </audio>

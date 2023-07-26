@@ -6,6 +6,9 @@ function validateForm() {
   let email = document.forms["SignUpForm"]["email"].value;
   let psw = document.forms["SignUpForm"]["psw"].value;
   let pswRepeat = document.forms["SignUpForm"]["pswRepeat"].value;
+  let pop = document.forms["SignUpForm"]["pop"];
+  let rock = document.forms["SignUpForm"]["rock"];
+  let jazz = document.forms["SignUpForm"]["jazz"];
 
   if (name == "") {
     alert("Name must be filled out");
@@ -47,5 +50,9 @@ function validateForm() {
     return false;
   }
 
-  alert("Hello " + name);
+  if (!(pop.checked || rock.checked || jazz.checked)) {
+    alert("Please fill at least one genre!");
+    return false;
+  }
+  alert("Hello " + name + " welcome to music.com!");
 }

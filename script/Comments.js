@@ -18,8 +18,8 @@ form.addEventListener('submit', function(event) {
   }
 
   const email = document.getElementById('email').value;
-  if(email.trim()==""){
-    document.getElementById("email_validation").innerHTML="Required*";
+  if(email_validate(email)){
+    document.getElementById("email_validation").innerHTML="Invalid email address!*";
     valid_input = false;
   }else{
     document.getElementById("email_validation").innerHTML="";
@@ -47,6 +47,16 @@ form.addEventListener('submit', function(event) {
     showPopup(sentence);
   }
 });
+
+function email_validate(email){
+  // regex for email copied from : https://regexr.com/3e48o
+  const emailRegex=/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+  if(emailRegex.test(email.value)){
+      return true;
+  }else{
+      return false;
+  }
+}
 
 // Get references to the popup elements
 const popupBox = document.getElementById('popupBox');

@@ -14,7 +14,7 @@ function changeTheme(event){
         case "light":
             text_color="black";
             bg_color="#eaeaea";
-            item_color="rgba(0, 0, 0, 0.15)"; 
+            item_color="rgba(0, 0, 0, 0.15)";
             item_hover="#F7F7F7";
             item_text="black";
             item_shadow="0 10px 30px rgba(0, 0, 0, 0.15)";

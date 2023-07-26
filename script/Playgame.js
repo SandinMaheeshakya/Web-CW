@@ -24,7 +24,7 @@ function playgame(){
 
 
     // Setting points and given badge
-    let points = 0;
+    let points = 10;
     let badge;
     const questions = [genreQuiz,musicianQuiz,instrumentQuiz]
 
@@ -40,7 +40,7 @@ function playgame(){
 
       // Swapping the correct answer with a random answer candidate
       let randomAnswer = Math.floor(Math.random() * 4);
-      [Answer[0],Answer[randomNumber]] = [Answer[randomNumber],Answer[0]]
+      [Answer[0],Answer[randomAnswer]] = [Answer[randomAnswer],Answer[0]]
 
       const input = prompt(Question+`\n1.${Answer[0]}\n2.${Answer[1]}\n3.${Answer[2]}\n4.${Answer[3]}`);
 
@@ -49,38 +49,38 @@ function playgame(){
       }
 
       // Checking if the answer is correct
-      if(Answer[randomAnswer] == Answer[input-1]){
+      if(input-1 === randomAnswer){
         console.log("Correct Answer");
         points+=2;
       }else{
-        console.log("Wrong Answer");
+        console.log("Wrong Answer"+randomAnswer);
         points-=1;
       }
     }
     console.log(points);
 
     // Setting the badge and points
-    if(points>7){
+    if(points>17){
       badge='Gold'
       document.getElementById("badge").style.display="block";
       document.getElementById("badge").style.backgroundColor="#FFD700";
-      document.getElementById("badge").innerHTML="Gold";
+      document.getElementById("badge").innerHTML="&#129351;";
       document.getElementById("points").style.display="block";
       document.getElementById("points").innerHTML=`Points : ${points}`;
       showPopup(`\"Congratulation! You have earned ${points} points with a ${badge} badge\"<br> please claim the points in your next purchase`);
-    }else if(points>5){
+    }else if(points>13){
       badge='Silver'
       document.getElementById("badge").style.display="block";
       document.getElementById("badge").style.backgroundColor="#C0C0C0";
-      document.getElementById("badge").innerHTML="Silver";
+      document.getElementById("badge").innerHTML="&#129352;";
       document.getElementById("points").style.display="block";
       document.getElementById("points").innerHTML=`Points : ${points}`;
       showPopup(`\"Congratulation! You have earned ${points} points with a ${badge} badge\"<br> please claim the points in your next purchase`);
-    }else if(points>3){
+    }else if(points>10){
       badge='Bronze'
       document.getElementById("badge").style.display="block";
       document.getElementById("badge").style.backgroundColor="#CD7F32";
-      document.getElementById("badge").innerHTML="Bronze";
+      document.getElementById("badge").innerHTML="&#129353;";
       document.getElementById("points").style.display="block";
       document.getElementById("points").innerHTML=`Points : ${points}`;
       showPopup(`\"Congratulation! You have earned ${points} points with a ${badge} badge\"<br> please claim the points in your next purchase`);

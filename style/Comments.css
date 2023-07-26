@@ -36,7 +36,7 @@ hr {
     border: 1px solid #eaeaea;
 }
 .validation_view{
-    color:red;
+    color:#ff0000;
     font-size: small;
     display:inline-block;
     margin-bottom: 20px;

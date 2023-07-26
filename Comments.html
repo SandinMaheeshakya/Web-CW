@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <title>Comment</title>
 </head>
+
 <body>
 
     <!-- Navigation bar -->
@@ -38,7 +40,9 @@
         <form id="myForm">
             <fieldset>
                 <div class="comment_head_div">
-                    <hr><h1 class="comment_head">Comments</h1><hr>
+                    <hr>
+                    <h1 class="comment_head">Comments</h1>
+                    <hr>
                 </div>
                 <hr>
                 <label for="name">Name:</label>
@@ -55,7 +59,8 @@
 
                 <label for="comment">Comment:</label>
                 <br>
-                <textarea id="comment" placeholder="Enter Comment" name="commentInput" class="inputField" rows="4" cols="40"></textarea>
+                <textarea id="comment" placeholder="Enter Comment" name="commentInput" class="inputField" rows="4"
+                    cols="40"></textarea>
                 <label class="validation_view" id="comment_validation"></label>
                 <br>
 
@@ -81,17 +86,23 @@
 
     <div id="overlay"></div>
     <div id="popupBox">
-            <h2>Thank you for Commenting</h2>
-            <p id="popUpMsg">This is the content of the popup box.</p>
-            <button onclick=hidePopup() id="closeButton">Close</button>
+        <h2>Thank you for Commenting</h2>
+        <p id="popUpMsg">This is the content of the popup box.</p>
+        <button onclick=hidePopup() id="closeButton">Close</button>
     </div>
 
     <!-- footer section -->
 
     <footer>
-        <p>&copy;Copyright by Group 3<br>All rights reserved<br>2023<br>Link to page Editor: <a class="button" href="Student2_EditorPage.html">Student 2</a></p>
+        <p>&copy;Copyright by Group 3<br>
+            All rights reserved<br>
+            2023<br>
+            Link to page Editor:
+            <a class="button" href="Student2_EditorPage.html">Student 2</a>
+        </p>
         <div class="gototop"><a href="#">&#11161;</a></div>
     </footer>
     <script src="script/Comments.js"></script>
 </body>
+
 </html>

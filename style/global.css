@@ -1,3 +1,5 @@
+/* import fonts  */
+@import url("https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&display=swap");
 /* global */
 html {
     box-sizing: border-box;
@@ -41,6 +43,7 @@ header {
     position: sticky;
     top: 0;
     height: fit-content;
+    max-height: 20px;
     width: 100%;
     font-size: 1rem;
     z-index: 10;

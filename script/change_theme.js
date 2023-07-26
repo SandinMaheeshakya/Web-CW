@@ -10,7 +10,6 @@ function changeTheme(event){
     var item_text="black"; 
     var item_shadow="0 10px 30px rgba(0, 0, 0, 0.15)";
 
-    //con
     switch (theme) {
         case "light":
             text_color="black";

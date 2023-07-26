@@ -18,8 +18,8 @@ form.addEventListener('submit', function(event) {
   }
 
   const email = document.getElementById('email').value;
-  if(email.trim()==""){
-    document.getElementById("email_validation").innerHTML="Required*";
+  if(!email_validate(email)){
+    document.getElementById("email_validation").innerHTML="Invalid email address!*";
     valid_input = false;
   }else{
     document.getElementById("email_validation").innerHTML="";
@@ -45,8 +45,22 @@ form.addEventListener('submit', function(event) {
     const sentence = "Dear "+ name + ", Thank you very much for " +
     "your feedback. You have rated our site as "+rating.value + ", and your comment was "+comment;
     showPopup(sentence);
+
+    //Reset form
+    const myForm = document.getElementById("myForm");
+    myForm.reset();
   }
 });
+
+function email_validate(email){
+  // regex for email copied from : https://regexr.com/3e48o
+  const emailRegex=/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+  if(emailRegex.test(email)){
+      return true;
+  }else{
+      return false;
+  }
+}
 
 // Get references to the popup elements
 const popupBox = document.getElementById('popupBox');

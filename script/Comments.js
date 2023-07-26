@@ -10,6 +10,7 @@ form.addEventListener('submit', function(event) {
   // Retrieve the input values
   const name = document.getElementById('name').value;
   if(name.trim()==""){
+    // If field empty show message
     document.getElementById("name_validation").innerHTML="Required*";
     valid_input = false;
   }else{
@@ -39,7 +40,7 @@ form.addEventListener('submit', function(event) {
   }else{
     document.getElementById("rating_validation").innerHTML="";
   }
-
+  //If valid shop pop up box
   if(valid_input){
     const sentence = "Dear "+ name + ", Thank you very much for " +
     "your feedback. You have rated our site as "+rating.value + ", and your comment was "+comment;

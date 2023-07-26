@@ -12,9 +12,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <!-- Navigation bar -->
+
     <header>
         <nav>
-            <a href="#"><img src="style/img/melody.png" height="20px" alt="Logo"></a>
+            <a href="#"><img src="style/img/melody.png" height="20px" alt="Melody logo"></a>
             <ul class="navigation_bar">
                 <li><a href="MainPage.html">Home</a></li>
                 <li><a href="About US.html">About Us</a></li>
@@ -28,12 +31,32 @@
             <a class="button" href="SignUpAlt.html">Sign-in</a>
         </nav>
     </header>
+
+    <!-- games section -->
+
     <section class="section_games">
         <div class="playgame_head_div">
             <hr>
             <h1 class="playgame_head">PlayGame</h1>
             <hr>
         </div>
+
+        <!-- details about game -->
+
+        <div class="playgame_info">
+            <ul>
+                <li>The Game contains 5 questions</li>
+                <li>Each question carries 2 marks and -1 for each wrong answer.</li>
+                <li>The different badges (Gold, Silver, Bronze) will be awarded to users depending on their performance.</li>
+                <li>When the quiz is completed, users will be given the badge and the awarded points.</li>
+            </ul>
+        </div>
+        <div class="button-container">
+            <button type="button" onclick=playgame()>Play Game</button>
+        </div>
+
+        <!-- games score and badge popup box -->
+
         <div id="overlay"></div>
         <div id="popupBox">
             <h2>Game Results</h2>
@@ -43,18 +66,10 @@
             <p id="popUpMsg">This is the content of the popup box.</p>
             <button onclick=hidePopup() id="closeButton">Close</button>
         </div>
-        <div class="playgame_info">
-        <ul>
-            <li>The Game contains 5 questions</li>
-            <li>Each question carries 2 marks and -1 for each wrong answer.</li>
-            <li>The different badges (Gold, Silver, Bronze) will be awarded to users depending on their performance.</li>
-            <li>When the quiz is completed, users will be given the badge and the awarded points.</li>
-        </ul>
-        </div>
-        <div class="button-container">
-            <button type="button" onclick=playgame()>Play Game</button>
-        </div>
     </section>
+
+    <!-- footer section -->
+
     <footer>
         <p>&copy;Copyright by Group 3<br>All rights reserved<br>2023<br>Link t<p>page Editor: <a class="button" href="Student2_EditorPage.html">Student 2</a></p>
         <div class="gototop"><a href="#">&#11161;</a></div>

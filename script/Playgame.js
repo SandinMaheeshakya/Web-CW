@@ -1,4 +1,5 @@
 function playgame(){
+    // Questions
     const genreQuiz = new Map([
       ["What music genre features fast-paced beats and rapping?", ["Hip-hop","Pop", "Rock", "Country"]],
       ["What genre of music is often associated with cowboys and features acoustic guitars?", ["Country","Hip-hop", "Jazz", "Reggae"]],
@@ -22,9 +23,12 @@ function playgame(){
     ]);
 
 
-    const questions = [genreQuiz,musicianQuiz,instrumentQuiz]
+    // Setting points and given badge
     let points = 0;
     let badge;
+    const questions = [genreQuiz,musicianQuiz,instrumentQuiz]
+
+    // Getting a random question basket
     const randomNumber = Math.floor(Math.random() * 3) + 1;
     const chosen_quiz = questions[randomNumber];
 
@@ -34,6 +38,7 @@ function playgame(){
       const Question = Array.from(chosen_quiz.keys())[i];
       let Answer = chosen_quiz.get(Question);
 
+      // Swapping the correct answer with a random answer candidate
       let randomAnswer = Math.floor(Math.random() * 4);
       [Answer[0],Answer[randomNumber]] = [Answer[randomNumber],Answer[0]]
 
@@ -43,6 +48,7 @@ function playgame(){
         break;
       }
 
+      // Checking if the answer is correct
       if(Answer[randomAnswer] == Answer[input-1]){
         console.log("Correct Answer");
         points+=2;
@@ -53,6 +59,7 @@ function playgame(){
     }
     console.log(points);
 
+    // Setting the badge and points
     if(points>7){
       badge='Gold'
       document.getElementById("badge").style.display="block";

@@ -88,7 +88,7 @@ nav a:hover{
 footer {
     height: 40vh;
     width: 100%;
-    background-color: black;
+    background-color: #000000;
     color: white;
     text-align: center;
 }
@@ -125,7 +125,7 @@ footer p {
 footer a {
     text-decoration: none;
     color: white;
-    background-color: crimson;
+    background-color: #dc143c;
 }
 
 /* global button */
@@ -159,7 +159,7 @@ button:hover {
 .section_forms{
     padding: 20px;
     border:none;
-    background-color: #eaeaea;
+    background-color: #00457e;
     background-image: url("img/forms_bg/cube_bg.jpg");
     background-size: cover;
     background-position: center;

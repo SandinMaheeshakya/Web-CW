@@ -102,14 +102,14 @@
     background-image: url("img/MainPage_img/item5.jpg");
 }
 .item_6{
-    color: white;
+    color: #ffffff;
     background-image: url("img/PlayGame_img/joystick_bg.jpg");
 }
 .item_7{
     background-image: url("img/MainPage_img/item7.jpg");
 }
 .item_8{
-    color: white;
+    color: #ffffff;
     background-image: url("img/MainPage_img/item8.jpg");
 }
 
@@ -131,7 +131,7 @@
     border-radius: 10px;
     padding: 3px 10px;
     transition: all 0.2s linear;
-    color: aliceblue;
+    color: #ffffff;
     transition: all linear 0.25s;
     position: sticky;
     top: 100%;
@@ -153,16 +153,16 @@
     text-align: center;
     background-color: #232323;
     height: fit-content;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #ffffff;
 }
 .section_three h1,.section_three hr{
-    color: white;
+    color: #ffffff;
 }
 .section_three hr{
     position: relative;
     right: -38.5%;
     width: 22vw;
-    border: 2px solid rgb(255, 255, 255);
+    border: 2px solid #ffffff;
 }
 .music .playButton{
     position: sticky;
@@ -173,11 +173,11 @@
     background-color: #F7F7F7;
 }
 .section_three .music:hover{
-    box-shadow: 0px 0px 0px 5px rgba(189, 189, 192, 0.5);
+    box-shadow: 0px 0px 0px 5px #bdbdc080;
 }
 .section_three .music img{
     border-radius: 5%;
-    box-shadow:  0px 7px 29px 0px rgba(100, 100, 111, 0.5);
+    box-shadow:  0px 7px 29px 0px #64646f80;
 }
 /* section four */
 .section_four {
@@ -190,13 +190,13 @@
     justify-items: center;
     text-align: center;
     align-items: center;
-    color: rgb(255, 255, 255);
+    color: #ffffff;
 }
 
 .section_four img {
     grid-area: 1/1/2/2;
     border-radius: 10px;
-    box-shadow: 1px 1px 6px 1px rgb(118, 118, 118);
+    box-shadow: 1px 1px 6px 1px #767676;
 }
 
 .section_four .content {
@@ -209,5 +209,5 @@
 }
 .content hr{
     width: 160px;
-    border: 2px solid white;
+    border: 2px solid #ffffff;
 }

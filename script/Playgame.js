@@ -24,7 +24,7 @@ function playgame(){
 
 
     // Setting points and given badge
-    let points = 0;
+    let points = 10;
     let badge;
     const questions = [genreQuiz,musicianQuiz,instrumentQuiz]
 
@@ -60,7 +60,7 @@ function playgame(){
     console.log(points);
 
     // Setting the badge and points
-    if(points>7){
+    if(points>17){
       badge='Gold'
       document.getElementById("badge").style.display="block";
       document.getElementById("badge").style.backgroundColor="#FFD700";
@@ -68,7 +68,7 @@ function playgame(){
       document.getElementById("points").style.display="block";
       document.getElementById("points").innerHTML=`Points : ${points}`;
       showPopup(`\"Congratulation! You have earned ${points} points with a ${badge} badge\"<br> please claim the points in your next purchase`);
-    }else if(points>5){
+    }else if(points>13){
       badge='Silver'
       document.getElementById("badge").style.display="block";
       document.getElementById("badge").style.backgroundColor="#C0C0C0";
@@ -76,7 +76,7 @@ function playgame(){
       document.getElementById("points").style.display="block";
       document.getElementById("points").innerHTML=`Points : ${points}`;
       showPopup(`\"Congratulation! You have earned ${points} points with a ${badge} badge\"<br> please claim the points in your next purchase`);
-    }else if(points>3){
+    }else if(points>10){
       badge='Bronze'
       document.getElementById("badge").style.display="block";
       document.getElementById("badge").style.backgroundColor="#CD7F32";

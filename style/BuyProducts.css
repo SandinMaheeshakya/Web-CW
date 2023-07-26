@@ -41,7 +41,7 @@ nav a:hover {
     background-color: cornflowerblue;
 }
 
-nav a .active {
+.active {
     background-color: crimson;
 }
 
@@ -319,8 +319,9 @@ body{
     color: white;
 }
 
-.active .side-cart {
+.activate .side-cart {
     left: calc(100% - 500px);
+    
 }
 
 .cart-item input.quantity-input {

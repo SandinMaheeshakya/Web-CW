@@ -42,11 +42,11 @@
 
  //Openinng  and Closing the side cart
  open_cart.addEventListener('click', ()=>{
-    body.classList.add('active');
+    body.classList.add('activate');
  })
 
  close_cart.addEventListener('click', ()=>{
-    body.classList.remove('active')
+    body.classList.remove('activate')
  })
 
 
@@ -136,7 +136,7 @@ function addtoCart(button) {
   }
 
   var sideCartContainer = document.querySelector('.side-cart');
-  sideCartContainer.classList.add('active');
+  sideCartContainer.classList.add('activate');
 
 
 

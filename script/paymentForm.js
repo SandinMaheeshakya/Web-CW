@@ -153,6 +153,9 @@ form.addEventListener("submit", function(event) {
     if(allValidated === true){
     showPopup();
     document.querySelector('.close-btn').addEventListener('click', closePopup);
+        
+    // Delay the redirection after 4 seconds
+    setTimeout(redirectToMainPage, 4000);
 
     }
 
@@ -197,3 +200,10 @@ function closePopup() {
 }
 
 });
+
+
+// Function to redirect to the Main page again
+function redirectToMainPage() {
+    window.location.href = 'BuyProducts.html';
+
+}

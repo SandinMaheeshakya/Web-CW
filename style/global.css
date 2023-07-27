@@ -42,8 +42,6 @@ p {
 header {
     position: sticky;
     top: 0;
-    height: fit-content;
-    max-height: 20px;
     width: 100%;
     font-size: 1rem;
     z-index: 10;
